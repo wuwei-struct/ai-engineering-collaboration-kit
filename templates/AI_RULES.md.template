@@ -139,7 +139,37 @@ STOP if:
 - PowerShell: PowerShell 7 + `-Encoding utf8`
 - Stop immediately if mojibake or Chinese garbling appears.
 
-## 9. Output
+## 9. Documentation Writeback
+
+After each task, check whether the change affects long-term project context.
+
+If affected, update related project documents when allowed by the current CommandPack.
+
+Common documentation categories:
+
+- project overview / usage docs
+- AI execution rules / repository rules
+- project context / current state
+- module boundary / architecture docs
+- testing / build / gate docs
+- roadmap / next phase docs
+- PR summaries / changelog
+- manifest / directory index
+
+Project-specific documentation paths:
+
+- project docs: {{PROJECT_DOCS}}
+- rule docs: {{RULE_DOCS}}
+- context docs: {{CONTEXT_DOCS}}
+- boundary docs: {{BOUNDARY_DOCS}}
+- testing docs: {{TESTING_DOCS}}
+- planning docs: {{PLAN_DOCS}}
+- changelog docs: {{CHANGELOG_DOCS}}
+- manifest docs: {{MANIFEST_DOCS}}
+
+If updates are needed but not authorized, report required documentation writeback in ExecutionReport.
+
+## 10. Output
 
 Every task must output ExecutionReport:
 
@@ -151,6 +181,7 @@ Every task must output ExecutionReport:
 - anti-spaghetti check
 - gates run
 - skipped gates and reasons
+- documentation writeback check
 - risks
 - rollback method
 - next steps

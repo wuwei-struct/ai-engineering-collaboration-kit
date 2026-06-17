@@ -294,6 +294,23 @@ templates/CommandPack.md.template
 - 需要扩大范围
 - 测试无法运行且原因不明
 
+---
+
+## 10. 文档不是死文件
+
+本套规范依赖仓库文档保存长期上下文。
+
+重要变更后，记得同步更新。以下路径是本套件推荐的标准模板路径，实际项目可以按自己的文档结构调整，Skill 不强制所有项目使用完全相同的文件名：
+
+- `docs/CONTEXT_PACK.md`（项目上下文）
+- `docs/MODULE_BOUNDARY.md`（模块边界）
+- `docs/TESTING.md`（测试门禁）
+- `docs/PR_SUMMARIES.md`（迭代记录）
+- `MANIFEST.md`（文件清单）
+- `CHANGELOG.md`（变更日志）
+
+如果 AI 没有权限更新相关文档，要求其在 ExecutionReport 中明确标记需要回写。
+
 ## ExecutionReport
 
 完成后输出目标、修改文件、门禁结果、UTF-8 检查、回滚方式。

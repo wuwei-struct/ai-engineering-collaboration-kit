@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.1.6 - Documentation Writeback Rules
+
+### Added
+- Added documentation writeback rules to `SKILL.md` and `SKILL_RUNTIME.md`.
+- Added Context Writeback mechanism to the full execution spec (`docs/02-agent-execution-spec.zh-CN.md`) and its Skill reference copy (`FULL_EXECUTION_SPEC.zh-CN.md`).
+- Added documentation update checks to the `CommandPack.md.template` and ExecutionReport template.
+- Added `Documentation Writeback` section to `AI_RULES.md.template`.
+- Added "文档不是死文件" guidance to `README.md`, `USAGE.md`, and `QUICK_START.md`.
+- Updated `MANIFEST.md` to include context maintenance meaning for key documents.
+
+### Changed
+- Clarified that project documents (ContextPack, ModuleBoundary, Testing, PR summaries, MANIFEST, CHANGELOG) are long-term AI collaboration context and should be updated when affected by code or workflow changes.
+- Updated `templates/CommandPack.md.template` section numbering to accommodate new document writeback section.
+
+### Fixed
+- Generalized documentation writeback rules so the reusable Skill does not hardcode this repository's documentation paths.
+- Reframed specific files such as README, ContextPack, ModuleBoundary, Testing, PR summaries, MANIFEST, and CHANGELOG as typical examples rather than universal requirements.
+- Templates now use project-level placeholders (`{{PROJECT_DOCS}}`, `{{RULE_DOCS}}`, `{{CONTEXT_DOCS}}`, etc.) instead of hardcoded file paths.
+
 ## v0.1.5 - Release Close and Runtime Finalization
 
 ### Changed

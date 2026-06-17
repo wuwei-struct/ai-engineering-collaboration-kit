@@ -27,19 +27,19 @@
 - `USAGE.md` (用户使用指南)
 - `docs/00-how-to-use-with-ai-agent.zh-CN.md` (AI 工具使用指南)
 - `docs/01-ai-project-collaboration-handbook.zh-CN.md` (18663 bytes)
-- `docs/02-agent-execution-spec.zh-CN.md` (41322 bytes)
+- `docs/02-agent-execution-spec.zh-CN.md` (41322 bytes) - 完整执行规范，文档回写机制使用通用文档类型+典型示例
 - `docs/03-tool-integration-guide.zh-CN.md` (6286 bytes)
 - `docs/04-faq.zh-CN.md` (4063 bytes)
 - `docs/05-case-study-guide.zh-CN.md` (2883 bytes)
 - `docs/06-release-checklist.zh-CN.md` (2945 bytes)
-- `docs/CONTEXT_PACK.md` (1228 bytes)
+- `docs/CONTEXT_PACK.md` (1228 bytes) - 项目上下文包，AI 协作长期上下文，重要迭代后应回写
 - `docs/DEV_GUIDE.md` (317 bytes)
-- `docs/MODULE_BOUNDARY.md` (617 bytes)
+- `docs/MODULE_BOUNDARY.md` (617 bytes) - 模块边界文档，变更模块结构后应回写
 - `docs/NEXT_PHASE_PLAN.md` (287 bytes)
 - `docs/PRODUCT_ARCHITECTURE.md` (512 bytes)
 - `docs/PRODUCT_BRIEF.md` (574 bytes)
-- `docs/PR_SUMMARIES.md` (511 bytes)
-- `docs/TESTING.md` (389 bytes)
+- `docs/PR_SUMMARIES.md` (511 bytes) - PR / 迭代记录，长期协作记忆，重要迭代后应回写
+- `docs/TESTING.md` (389 bytes) - 测试门禁文档，门禁命令变更后应回写
 - `examples/01-simple-node-cli/.editorconfig` (151 bytes)
 - `examples/01-simple-node-cli/.gitattributes` (329 bytes)
 - `examples/01-simple-node-cli/.gitignore` (163 bytes)
@@ -93,8 +93,8 @@
 - `scripts/check_utf8.py` (3569 bytes)
 - `scripts/init_project_skeleton.py` (2452 bytes)
 - `scripts/validate_project_structure.py` (1511 bytes)
-- `skills/codex-ide-executor-zh/SKILL.md` (路由型 Skill，AI 日常执行入口 / 压缩执行器)
-- `skills/codex-ide-executor-zh/SKILL_RUNTIME.md` (可选更短 Runtime 摘要)
+- `skills/codex-ide-executor-zh/SKILL.md` (路由型 Skill，AI 日常执行入口 / 压缩执行器，包含文档回写规则，使用通用文档类型不绑定特定路径）
+- `skills/codex-ide-executor-zh/SKILL_RUNTIME.md` (可选更短 Runtime 摘要，包含通用文档回写提醒)
 - `skills/codex-ide-executor-zh/assets/AGENTS_TEMPLATE.md` (3804 bytes)
 - `skills/codex-ide-executor-zh/assets/CODEX_CUSTOM_INSTRUCTIONS_ZH.md` (577 bytes)
 - `skills/codex-ide-executor-zh/references/ANTI_SPAGHETTI_RULES.md` (1277 bytes)
@@ -112,9 +112,9 @@
 - `templates/.gitattributes.template` (329 bytes)
 - `templates/.gitignore.template` (163 bytes)
 - `templates/AGENTS.md.template` (3804 bytes)
-- `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用)
+- `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用，包含通用 Documentation Writeback 和 {{PLACEHOLDER}})
 - `templates/CONTEXT_PACK.md.template` (607 bytes)
-- `templates/CommandPack.md.template` (2387 bytes)
+- `templates/CommandPack.md.template` (2387 bytes) - 任务合同模板，包含通用文档回写要求和 {{PLACEHOLDER}} 字段
 - `templates/DEV_GUIDE.md.template` (419 bytes)
 - `templates/MODULE_BOUNDARY.md.template` (1174 bytes)
 - `templates/NEXT_PHASE_PLAN.md.template` (214 bytes)

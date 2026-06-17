@@ -151,6 +151,23 @@ AI 日常执行任务时，不需要默认读取所有项目文档。
 
 > 完整规范是母版，Skill 是压缩执行器，CommandPack 是本次任务合同。AI 平时只需要后两者。
 
+## 文档不是死文件
+
+本套规范依赖仓库文档保存长期上下文，这些文档不是一次性说明。
+
+重要变更后，应同步更新项目文档。以下路径是本套件推荐的标准模板路径，实际项目可以按自己的文档结构调整，Skill 不强制所有项目使用完全相同的文件名：
+
+- `docs/CONTEXT_PACK.md`（项目上下文）
+- `docs/MODULE_BOUNDARY.md`（模块边界）
+- `docs/TESTING.md`（测试门禁）
+- `docs/PR_SUMMARIES.md`（迭代记录）
+- `MANIFEST.md`（文件清单）
+- `CHANGELOG.md`（变更日志）
+
+如果项目采用不同名称，可在 CommandPack / AGENTS.md / `.ai_rules.md` 中声明。
+
+如果 AI 没有权限更新相关文档，必须在 ExecutionReport 中明确标记需要回写。
+
 - `.ai_rules.md`：项目级规则摘要，按需使用，由 CLI / 人工从 `templates/AI_RULES.md.template` 生成。
 - `SKILL_RUNTIME.md`：Skill 内部的可选更短 Runtime 摘要，不是必须让用户每次额外提供的文件。
 
