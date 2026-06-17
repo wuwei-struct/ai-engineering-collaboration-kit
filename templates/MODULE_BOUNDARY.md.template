@@ -1,0 +1,62 @@
+# MODULE_BOUNDARY
+
+## 1. 核心原则
+
+新业务逻辑优先放入独立模块。  
+中央入口文件只负责 wiring、初始化、路由接线、兼容委托。
+
+---
+
+## 2. 中央入口文件
+
+以下文件不得继续加入大段业务逻辑：
+
+- `<path>`
+- `<path>`
+
+允许职责：
+
+- wiring
+- 初始化
+- 路由接线
+- 兼容委托
+- 简单入口
+
+---
+
+## 3. 推荐模块目录
+
+| 目录 | 职责 |
+|---|---|
+| `src/services/` | 业务服务 |
+| `src/schemas/` | 数据结构 / zod / types |
+| `src/parsers/` | 解析逻辑 |
+| `src/builders/` | 构建逻辑 |
+| `src/components/` | UI 组件 |
+| `src/views/` | 页面视图 |
+| `src/stores/` | 状态管理 |
+| `src/validators/` | 校验逻辑 |
+| `src/exporters/` | 导出逻辑 |
+| `src/adapters/` | 外部适配 |
+
+---
+
+## 4. 禁止跨层调用
+
+-
+
+---
+
+## 5. 已知大文件
+
+| 文件 | 当前问题 | 后续策略 |
+|---|---|---|
+|  |  |  |
+
+---
+
+## 6. 新增模块规则
+
+如果任务需要新增 service、parser、builder、validator、exporter、adapter 等能力，CommandPack 必须允许新增对应模块路径。
+
+如果允许路径不足，执行代理必须 STOP，不得硬塞进中央大文件。

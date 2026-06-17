@@ -1,0 +1,8 @@
+{
+  "name": "example-electron-app-skeleton",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "check:utf8": "python scripts/check_utf8.py ."
+  }
+}

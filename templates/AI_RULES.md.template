@@ -1,0 +1,156 @@
+# AI Project Rules
+
+> 本文件是项目级规则摘要，不是必需运行时入口。
+>
+> AI 日常执行优先依据：
+> 1. 当前 CommandPack
+> 2. `SKILL.md`
+>
+> 当任务需要项目事实或特殊约束时，再读取本文件。
+
+## 0. Project Summary
+
+- Project name: {{PROJECT_NAME}}
+- Project type: {{PROJECT_TYPE}}
+- Stack: {{STACK}}
+- Package manager: {{PACKAGE_MANAGER}}
+- Main commands:
+  - lint: {{LINT_COMMAND}}
+  - typecheck: {{TYPECHECK_COMMAND}}
+  - test: {{TEST_COMMAND}}
+  - build: {{BUILD_COMMAND}}
+  - utf8: {{UTF8_COMMAND}}
+
+## 1. Read Order
+
+Default minimal input:
+
+1. Current CommandPack
+2. `SKILL.md`
+
+Project files to read on demand:
+
+- `.ai_rules.md`
+- `AGENTS.md`
+- `docs/CONTEXT_PACK.md`
+- `docs/MODULE_BOUNDARY.md`
+- `docs/TESTING.md`
+- Related source and tests
+
+Full execution spec is for human maintenance, audit, teaching, and spec evolution, not daily AI execution. In high-risk or unclear scenarios, STOP.
+
+## 2. Mode Detection
+
+### FAST MODE
+
+Use for:
+
+- Single file small change
+- Text / style / config only
+- No business logic
+- No schema
+- No permission / license / billing
+- No production config
+
+Read:
+
+- CommandPack
+- related file
+- `.ai_rules.md` / `AGENTS.md`, on demand
+
+### SAFE MODE
+
+Use for:
+
+- Feature development
+- Normal bugfix
+- Multiple file change
+- Logic modification
+- Existing module update
+
+Read:
+
+- CommandPack
+- `.ai_rules.md` / `AGENTS.md`, on demand
+- `docs/CONTEXT_PACK.md` L1
+- related source and tests
+- related module boundary
+
+### AUDIT MODE
+
+Use for:
+
+- Architecture
+- permission / license / billing
+- schema / database / migration
+- production config
+- security
+- cross-module change
+- central-file refactor
+
+Read:
+
+- CommandPack
+- `.ai_rules.md` / `AGENTS.md`, on demand
+- `docs/CONTEXT_PACK.md` L2/L3
+- `docs/PRODUCT_ARCHITECTURE.md`
+- `docs/MODULE_BOUNDARY.md`
+- `docs/TESTING.md`
+
+If high-risk, unclear, or conflicting, STOP and request a clearer CommandPack or human confirmation.
+
+## 3. Allowed Paths
+
+{{ALLOWED_PATHS}}
+
+## 4. Forbidden Paths
+
+{{FORBIDDEN_PATHS}}
+
+## 5. Central Files
+
+These files are entry / wiring only. Do not add large business logic here:
+
+{{CENTRAL_FILES}}
+
+## 6. Required Gates
+
+{{REQUIRED_GATES}}
+
+## 7. STOP Conditions
+
+STOP if:
+
+- requirement unclear
+- insufficient context
+- path conflict
+- forbidden path required
+- business rule unclear
+- secret / `.env` / production config required
+- Chinese encoding risk
+- task has multiple high-risk intents
+- implementation would create spaghetti code
+
+## 8. UTF-8 Rules
+
+- All text files use UTF-8.
+- Python: `encoding="utf-8"`
+- Node: `"utf8"`
+- PowerShell: PowerShell 7 + `-Encoding utf8`
+- Stop immediately if mojibake or Chinese garbling appears.
+
+## 9. Output
+
+Every task must output ExecutionReport:
+
+- objective
+- mode
+- modified files
+- scope check
+- UTF-8 check
+- anti-spaghetti check
+- gates run
+- skipped gates and reasons
+- risks
+- rollback method
+- next steps

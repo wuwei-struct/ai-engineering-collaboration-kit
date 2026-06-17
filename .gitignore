@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.env
+.env.local
+.env.*.local
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+.vscode/*
+!.vscode/extensions.json

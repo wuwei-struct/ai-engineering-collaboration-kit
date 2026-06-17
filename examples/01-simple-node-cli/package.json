@@ -1,0 +1,9 @@
+{
+  "name": "example-simple-node-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/greet.test.js",
+    "check:utf8": "python scripts/check_utf8.py ."
+  }
+}
