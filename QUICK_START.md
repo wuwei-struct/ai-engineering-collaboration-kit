@@ -238,6 +238,8 @@ git tag baseline-ai-collab-v0
 
 > 帮我加一个功能。
 
+不熟悉工程规范的用户可以先填写 `templates/TASK_INTAKE.md.template`（任务意图表），由项目负责人、规划型 AI、CLI 或插件生成 CommandPack。
+
 使用 CommandPack：
 
 ```txt

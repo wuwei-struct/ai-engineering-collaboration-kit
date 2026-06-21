@@ -268,6 +268,22 @@ templates/CommandPack.md.template
 - 怎么回滚。
 - 下一步建议是什么。
 
+## 不会写 CommandPack 怎么办？
+
+你不需要从零手写 CommandPack。
+
+可以先填写：
+
+- `templates/TASK_INTAKE.md.template`
+- `templates/PROJECT_INTAKE.md.template`
+
+然后由项目负责人、规划型 AI、CLI、插件或其他协作助理生成正式 CommandPack。
+
+日常执行时，代码执行代理只需要：
+
+1. CommandPack
+2. `skills/codex-ide-executor-zh/SKILL.md`
+
 ## 推荐目录结构
 
 将本套件应用到你的项目后，推荐你的项目至少具备：

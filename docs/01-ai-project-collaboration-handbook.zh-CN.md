@@ -520,6 +520,9 @@ git tag v0.1.0-beta
 
 而是先形成一个明确的任务合同，也就是 CommandPack。
 
+对于不熟悉工程规范的用户，不要求直接手写 CommandPack。
+可以先填写 `templates/TASK_INTAKE.md.template`（任务意图表），再由项目负责人、规划型 AI、CLI 或插件生成 CommandPack。
+
 一个合格的 CommandPack 至少包括：
 
 - planId / iteration

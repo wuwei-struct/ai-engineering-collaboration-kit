@@ -32,6 +32,8 @@
 - `docs/04-faq.zh-CN.md` (4063 bytes)
 - `docs/05-case-study-guide.zh-CN.md` (2883 bytes)
 - `docs/06-release-checklist.zh-CN.md` (2945 bytes)
+- `docs/07-non-programmer-workflow.zh-CN.md` - 非程序员使用指南，说明如何通过 Task Intake 参与 AI 协作，无需手写 CommandPack
+- `docs/08-commandpack-generation-guide.zh-CN.md` - CommandPack 生成指南，说明如何从 Task Intake / 自然语言生成 CommandPack
 - `docs/CONTEXT_PACK.md` (1228 bytes) - 项目上下文包，AI 协作长期上下文，重要迭代后应回写
 - `docs/DEV_GUIDE.md` (317 bytes)
 - `docs/MODULE_BOUNDARY.md` (617 bytes) - 模块边界文档，变更模块结构后应回写
@@ -114,7 +116,9 @@
 - `templates/AGENTS.md.template` (3804 bytes)
 - `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用，包含通用 Documentation Writeback 和 {{PLACEHOLDER}})
 - `templates/CONTEXT_PACK.md.template` (607 bytes)
-- `templates/CommandPack.md.template` (2387 bytes) - 任务合同模板，包含通用文档回写要求和 {{PLACEHOLDER}} 字段
+- `templates/CommandPack.md.template` - 任务合同模板，包含通用文档回写要求和 {{PLACEHOLDER}} 字段，可由 Task Intake 生成
+- `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，无需手写 CommandPack
+- `templates/PROJECT_INTAKE.md.template` - 项目意图表模板，普通用户填写项目基本情况，用于生成初始 ContextPack / AGENTS / .ai_rules
 - `templates/DEV_GUIDE.md.template` (419 bytes)
 - `templates/MODULE_BOUNDARY.md.template` (1174 bytes)
 - `templates/NEXT_PHASE_PLAN.md.template` (214 bytes)

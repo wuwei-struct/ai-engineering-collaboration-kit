@@ -1,5 +1,8 @@
 # CommandPack：<任务名称>
 
+> 本文件是任务合同，可由项目负责人、规划型 AI、CLI 或插件从 `TASK_INTAKE.md` / `PROJECT_INTAKE.md` 或用户自然语言描述生成。
+> 不要求用户直接手写。
+
 ## 0. 基本信息
 
 - planId：

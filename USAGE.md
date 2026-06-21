@@ -73,13 +73,14 @@ AI 每次真正需要的是：
 
 ## 每次让 AI 改代码时怎么做
 
-1. 先写一个 CommandPack
-2. CommandPack 中明确任务目标、允许路径、禁止路径、必读上下文、门禁、STOP 条件
-3. 把 CommandPack + `SKILL.md` 给 AI
-4. AI 按需读取项目资料
-5. AI 执行后必须输出 ExecutionReport
-6. 人检查 diff、测试结果、风险和回滚方式
-7. 重要变更写入 `PR_SUMMARIES.md` 和 `CONTEXT_PACK.md`
+1. 普通用户先填写 `templates/TASK_INTAKE.md.template`（任务意图表），不需要手写 CommandPack。
+2. CommandPack 可以由项目负责人、规划型 AI、CLI 或插件从 Task Intake 生成。
+3. CommandPack 中明确任务目标、允许路径、禁止路径、必读上下文、门禁、STOP 条件
+4. 把 CommandPack + `SKILL.md` 给 AI
+5. AI 按需读取项目资料
+6. AI 执行后必须输出 ExecutionReport
+7. 人检查 diff、测试结果、风险和回滚方式
+8. 重要变更写入 `PR_SUMMARIES.md` 和 `CONTEXT_PACK.md`
 
 ---
 
