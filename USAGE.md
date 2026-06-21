@@ -121,6 +121,23 @@ AI 每次真正需要的是：
 
 ---
 
+## ContextPack 应从项目开始维护
+
+ContextPack 不应该等项目后期才一次性生成。
+
+推荐流程：
+
+1. 用 `PROJECT_INTAKE.md.template` 收集项目基本情况。
+2. 生成初始 L1 ContextPack。
+3. 每个重要任务后记录 Context Delta。
+4. 阶段性整理 L2 / L3。
+
+未来 CLI / 插件可以自动生成，但在此之前，可以由项目负责人、规划型 AI 或执行代理在授权范围内维护。
+
+详见：[`docs/09-contextpack-lifecycle.zh-CN.md`](docs/09-contextpack-lifecycle.zh-CN.md)
+
+---
+
 ## 文档不是死文件
 
 本套规范依赖仓库文档保存长期上下文。

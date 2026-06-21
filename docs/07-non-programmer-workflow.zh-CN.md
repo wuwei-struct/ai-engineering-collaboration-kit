@@ -19,6 +19,12 @@ CommandPack 是工程任务合同，不适合要求所有用户手写。
 
 ContextPack 是项目上下文压缩包。
 
+非程序员不需要直接写 ContextPack。
+
+- `PROJECT_INTAKE` 可用于生成初始 ContextPack。
+- 每次重要任务后，由上游规划者或执行代理给出 Context Delta。
+- 用户只需要确认"当前状态是否记录正确"。
+
 普通用户可以先填写 `templates/PROJECT_INTAKE.md.template`，后续由项目负责人、规划型 AI、CLI 或插件生成初始 ContextPack。
 
 ## 3. 推荐流程

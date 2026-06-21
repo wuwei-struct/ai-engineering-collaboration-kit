@@ -109,3 +109,20 @@
 - [ ] 帮我生成 CommandPack
 - [ ] 帮我审查 ExecutionReport
 - [ ] 不确定
+
+## 12. 生成初始 ContextPack
+
+本表可用于生成项目的 L1 ContextPack。
+
+如果项目还没有 ContextPack，应先根据本表生成：
+
+- 项目定位
+- 当前阶段
+- 技术栈
+- 主要目录
+- 常用命令
+- 当前重点
+- 禁止事项
+- 已知风险
+
+用户不需要自己写完整 ContextPack。

@@ -171,6 +171,29 @@
 - 规则沉淀建议。
 - 下一步建议。
 
+## ContextPack 生命周期要求
+
+任务开始前，请判断：
+
+- 当前项目是否已有 ContextPack
+- L1 上下文是否足够支撑本次任务
+- 是否需要先 Bootstrap L1 ContextPack
+- 本次任务完成后是否需要记录 Context Delta
+
+如果本次任务是项目启动、复杂功能、跨模块修改、架构调整、重要 bugfix、发布准备或阶段收口，应要求更新 ContextPack。
+
+如果当前任务不允许修改 ContextPack，请在 ExecutionReport 中输出 Context Delta 建议。
+
+## ExecutionReport 上下文字段
+
+### ContextPack 检查
+- 是否已有 ContextPack：
+- 本次是否需要 Bootstrap：
+- 本次是否产生 Context Delta：
+- 是否已更新 ContextPack：
+- 如未更新，原因：
+- 建议补充内容：
+
 ## 文档回写检查
 - 是否需要更新 ContextPack：
 - 是否需要更新模块边界：

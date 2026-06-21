@@ -70,11 +70,25 @@ CommandPack 可以来自：
 
 包含上下文不足、路径冲突、业务规则不清、密钥、生产配置、乱码风险等。
 
-### Step 9：写文档回写要求
+### Step 9：判断 ContextPack 生命周期
+
+生成 CommandPack 时，应判断：
+
+1. 项目是否已有 ContextPack。
+2. 当前任务是否需要先建立 L1。
+3. 当前任务完成后是否会产生 Context Delta。
+4. 是否授权执行代理更新 ContextPack。
+5. 如果不授权，是否要求 ExecutionReport 输出待回写内容。
+
+原则：
+
+> 重要任务不只改代码，还要留下上下文痕迹。
+
+### Step 10：写文档回写要求
 
 判断是否影响长期上下文。
 
-### Step 10：写 ExecutionReport 格式
+### Step 11：写 ExecutionReport 格式
 
 要求 AI 输出证据。
 

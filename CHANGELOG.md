@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.1.8 - ContextPack Lifecycle
+
+### Added
+- Added ContextPack lifecycle guide (`docs/09-contextpack-lifecycle.zh-CN.md`).
+- Added Bootstrap / Delta / Writeback model for ContextPack maintenance.
+- Added Context Delta Log and Pending Context Updates sections to the ContextPack template.
+
+### Changed
+- Clarified that ContextPack should be started at project beginning and updated after important tasks, not only generated once later.
+- Updated Project Intake, Task Intake, CommandPack template, and user guides to support ContextPack lifecycle.
+- Updated `templates/CONTEXT_PACK.md.template` with Metadata, L1/L2/L3 restructuring, Context Delta Log, and Pending Context Updates.
+- Updated `templates/PROJECT_INTAKE.md.template` to explain it can be used to generate initial L1 ContextPack.
+- Updated `templates/TASK_INTAKE.md.template` with "是否影响项目上下文" field.
+- Updated `templates/CommandPack.md.template` with ContextPack lifecycle requirements and ContextPack check fields in ExecutionReport.
+- Updated `docs/07-non-programmer-workflow.zh-CN.md` to clarify non-programmers don't write ContextPack directly.
+- Updated `docs/08-commandpack-generation-guide.zh-CN.md` with ContextPack lifecycle judgment step.
+- Updated README, USAGE, QUICK_START with ContextPack maintenance guidance.
+
 ## v0.1.7 - Task Intake and CommandPack Generation Layer
 
 ### Added

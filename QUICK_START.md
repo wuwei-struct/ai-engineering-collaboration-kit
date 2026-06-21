@@ -129,6 +129,8 @@ templates/AGENTS.md.template
 
 ContextPack 是给 AI 快速读取的项目上下文包。
 
+ContextPack 不应该等项目后期才一次性生成。推荐从项目开始就建立 L1，每个重要任务后记录 Context Delta。
+
 最小版本写清楚：
 
 - 项目定位。
@@ -141,6 +143,8 @@ ContextPack 是给 AI 快速读取的项目上下文包。
 
 不要把所有细节都塞进去。  
 ContextPack 是压缩上下文，不是文档垃圾桶。
+
+详见：[`docs/09-contextpack-lifecycle.zh-CN.md`](docs/09-contextpack-lifecycle.zh-CN.md)
 
 ---
 
