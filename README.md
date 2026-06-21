@@ -48,6 +48,33 @@
 - 你只想要一组短 prompt，而不是工程流程。
 - 你不关心项目长期维护、可回滚、可审查。
 
+## 我该从哪里开始？
+
+如果你不懂代码：
+
+1. 读 `SELF_DIAGNOSIS.md`
+2. 读 `QUICK_START.md`
+3. 填 `templates/TASK_INTAKE.md.template`
+
+如果你已经有项目：
+
+1. 用 `SKILL.md + CommandPack` 跑最小流程
+2. 按需补 `AGENTS.md`
+3. 按需补 `CONTEXT_PACK.md`
+4. 项目复杂后再补 `MODULE_BOUNDARY.md` / `TESTING.md`
+
+如果你是工程用户：
+
+1. 读 `USAGE.md`
+2. 看 `templates/CommandPack.md.template`
+3. 按项目复杂度选择使用模式
+
+文件太多不知道怎么选时，先看：
+
+- `docs/10-file-roles-and-usage-modes.zh-CN.md`
+
+---
+
 ## 包含内容
 
 本仓库包含四类内容：

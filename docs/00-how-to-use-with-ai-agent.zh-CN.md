@@ -1,88 +1,23 @@
 # 如何在 AI 编程工具中使用本规范包
 
-## 1. 核心问题
-
-不要每次把完整执行规范塞给 AI。
-
-完整规范很重要，但它适合作为源规范、审计依据和复杂任务参考，不适合作为每次任务的默认上下文。
-
-`SKILL.md` 已重构为轻量路由型 Skill（约 330 行），负责判断任务模式、读取顺序和升级规则。完整规范沉淀在 `docs/02-agent-execution-spec.zh-CN.md` 和 `references/FULL_EXECUTION_SPEC.zh-CN.md` 中，仅作为维护 / 审计资料。
+> 文件选择和使用模式见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](10-file-roles-and-usage-modes.zh-CN.md)
 
 ---
 
-## 2. 默认使用方式
+## 1. 核心原则
 
-AI 日常任务默认只需要：
+AI 日常任务最小只需要：
 
 1. 当前 `CommandPack`
 2. `skills/codex-ide-executor-zh/SKILL.md`
 
-不要默认要求 AI 读取完整规范。
+不要求 AI 默认读取完整规范。按需再补充 `.ai_rules.md`、`AGENTS.md`、`CONTEXT_PACK.md` 等项目资料。
 
-如果 CommandPack 或 Skill 判断需要更多信息，再按需读取：
-
-- `.ai_rules.md`
-- `AGENTS.md`
-- `docs/CONTEXT_PACK.md`
-- `docs/MODULE_BOUNDARY.md`
-- `docs/TESTING.md`
-- 相关源码和测试
+完整规范仅作为维护、审计、教学和复盘使用。
 
 ---
 
-## 3. 什么时候读完整规范
-
-完整规范不作为默认 AI 运行上下文。
-
-完整规范只在以下情况作为参考：
-
-- 人类维护规范
-- 修改 Skill / 执行规范本身
-- 开源文档、教学、复盘、审计场景需要引用完整制度
-
-日常代码任务不应依赖完整规范。
-
-遇到高风险、不明确或规则冲突时，AI 应 STOP，而不是自行读取完整规范后继续执行。
-
----
-
-## 4. FAST / SAFE / AUDIT 读取策略
-
-### FAST MODE
-
-读取：
-
-- 当前 CommandPack
-- `.ai_rules.md` / `AGENTS.md`，按需
-- 当前相关文件
-
-### SAFE MODE
-
-读取：
-
-- 当前 CommandPack
-- `.ai_rules.md` / `AGENTS.md`，按需
-- `docs/CONTEXT_PACK.md` L1
-- `docs/MODULE_BOUNDARY.md` 相关部分
-- 相关源码和测试
-
-### AUDIT MODE
-
-读取：
-
-- 当前 CommandPack
-- `.ai_rules.md`
-- `AGENTS.md`
-- `docs/CONTEXT_PACK.md` L2/L3
-- `docs/PRODUCT_ARCHITECTURE.md`
-- `docs/MODULE_BOUNDARY.md`
-- `docs/TESTING.md`
-
-高风险、不明确或规则冲突时，优先 STOP，要求更明确的 CommandPack 或人工确认。
-
----
-
-## 5. Claude 使用方式
+## 2. Claude 使用方式
 
 ### 推荐 Prompt
 
@@ -107,7 +42,7 @@ AI 日常任务默认只需要：
 
 ---
 
-## 6. Codex 使用方式
+## 3. Codex 使用方式
 
 SKILL.md 是 Codex Skill 主入口。  
 CommandPack 是当前任务合同。  
@@ -128,7 +63,7 @@ CommandPack 是当前任务合同。
 
 ---
 
-## 7. Cursor / Copilot / IDE Agent 使用方式
+## 4. Cursor / Copilot / IDE Agent 使用方式
 
 如果工具不支持 Skill 格式，使用通用方式：
 
@@ -156,7 +91,7 @@ CommandPack 是当前任务合同。
 
 ---
 
-## 9. 正确用法
+## 6. 正确用法
 
 应该：
 
@@ -169,7 +104,7 @@ CommandPack 是当前任务合同。
 
 ---
 
-## 10. 快速检查清单
+## 7. 快速检查清单
 
 在给 AI 发任务前，确认：
 

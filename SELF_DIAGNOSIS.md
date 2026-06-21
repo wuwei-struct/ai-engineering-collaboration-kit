@@ -195,6 +195,38 @@
 
 ---
 
+## 你现在应该从哪里开始？
+
+### 我不懂代码，只知道想改什么
+
+使用：
+
+- `templates/TASK_INTAKE.md.template`
+- `docs/07-non-programmer-workflow.zh-CN.md`
+
+### 我有项目，但没有上下文文档
+
+使用：
+
+- `templates/PROJECT_INTAKE.md.template`
+- `templates/CONTEXT_PACK.md.template`
+- `docs/09-contextpack-lifecycle.zh-CN.md`
+
+### 我已经会写任务要求
+
+使用：
+
+- `templates/CommandPack.md.template`
+- `skills/codex-ide-executor-zh/SKILL.md`
+
+### 我不知道这些文件怎么选
+
+先看：
+
+- `docs/10-file-roles-and-usage-modes.zh-CN.md`
+
+---
+
 ## 核心判断
 
 如果 AI 只是帮你写几行代码，规范可以很轻。

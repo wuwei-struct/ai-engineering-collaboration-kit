@@ -1,5 +1,18 @@
 # PR_SUMMARIES
 
+## PR-001：v0.1.9 - Lightweight Entry and File Role Matrix
+
+- 日期：2026-06-21
+- 目标：降低开源项目入口复杂度，明确不同用户和不同项目阶段需要哪些文件。
+- 新增：`docs/10-file-roles-and-usage-modes.zh-CN.md`
+- 更新：README、QUICK_START、USAGE、SELF_DIAGNOSIS、docs/00、docs/07、docs/08、docs/09
+- 核心口径：最小模式只需要 `SKILL.md + CommandPack`；项目复杂后再逐步补充 AGENTS、ContextPack、Testing、ModuleBoundary 等文档。
+- 执行门禁：python scripts/check_utf8.py .、python scripts/validate_project_structure.py .
+- 风险：仅文档入口减重，未改底层执行规则和 Skill。
+- 回滚方式：git revert 到 v0.1.8。
+
+---
+
 ## PR-000：创建 AI 工程协作规范套件开源包
 
 - 日期：2026-06-17

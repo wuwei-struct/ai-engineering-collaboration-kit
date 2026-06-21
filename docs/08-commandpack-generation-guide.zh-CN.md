@@ -18,7 +18,16 @@ CommandPack 是任务合同。
 - 怎么回滚
 - 是否需要文档回写
 
-## 2. 输入来源
+## 2. 不同用户的输入来源
+
+- **普通用户**：Task Intake
+- **半懂代码用户**：Task Intake + 相关页面 / 文件线索
+- **工程用户**：直接写 CommandPack
+- **CLI / 插件**：从 Project Intake、Task Intake、目录扫描、package scripts 生成 CommandPack
+
+生成者不必是特定 AI，可以是项目负责人、规划型 AI、CLI 或插件。
+
+### 具体输入形式
 
 CommandPack 可以来自：
 

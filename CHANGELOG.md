@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.1.9 - Lightweight Entry and File Role Matrix
+
+### Added
+- Added `docs/10-file-roles-and-usage-modes.zh-CN.md`.
+- Added usage mode matrix for minimal, standard, long-term, and audit/release workflows.
+- Added required / recommended / optional file role guidance.
+
+### Changed
+- Clarified that users do not need to use all files at the beginning.
+- Clarified that `.ai_rules.md` is optional and better treated as a future CLI/plugin-generated project summary.
+- Simplified README, QUICK_START, USAGE, and AI tool usage guide entry points.
+- Reduced repeated explanations across README, QUICK_START, and USAGE by linking to the file role matrix.
+- Updated SELF_DIAGNOSIS with entry path guidance for different user levels.
+- Updated docs/00-how-to-use-with-ai-agent with compressed introductory content and file role matrix reference.
+- Updated docs/07-non-programmer-workflow with explicit entry guidance and file role matrix link.
+- Updated docs/08-commandpack-generation-guide with different user input source guidance.
+- Updated docs/09-contextpack-lifecycle with clarification that ContextPack doesn't require non-programmers to hand-write.
+
 ## v0.1.8 - ContextPack Lifecycle
 
 ### Added

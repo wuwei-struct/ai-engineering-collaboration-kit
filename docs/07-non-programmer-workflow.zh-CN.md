@@ -1,5 +1,11 @@
 # 非程序员如何使用本套件
 
+> 普通用户不需要理解全部文件。默认只从 `TASK_INTAKE` 开始。
+>
+> 文件选择详见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](10-file-roles-and-usage-modes.zh-CN.md)
+
+---
+
 ## 1. 不需要直接写 CommandPack
 
 CommandPack 是工程任务合同，不适合要求所有用户手写。

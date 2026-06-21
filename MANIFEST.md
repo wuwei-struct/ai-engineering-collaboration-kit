@@ -4,6 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
+- 最后更新：v0.1.9 - Lightweight Entry and File Role Matrix
 
 ## 质量检查
 
@@ -21,10 +22,10 @@
 - `LICENSE` (554 bytes)
 - `LICENSE-CODE` (1094 bytes)
 - `LICENSE-DOCS` (871 bytes)
-- `QUICK_START.md` (6840 bytes)
-- `README.md` (6343 bytes)
-- `SELF_DIAGNOSIS.md` (5612 bytes)
-- `USAGE.md` (用户使用指南)
+- `QUICK_START.md` - 快速开始，轻量入口，最小可用流程优先，引导用户按阶段选择文件
+- `README.md` - 项目首页，含"我该从哪里开始"轻量入口指引
+- `SELF_DIAGNOSIS.md` - 自诊清单，含入口选择引导
+- `USAGE.md` - 使用指南，含文件选择轻量入口，减重不重复
 - `docs/00-how-to-use-with-ai-agent.zh-CN.md` (AI 工具使用指南)
 - `docs/01-ai-project-collaboration-handbook.zh-CN.md` (18663 bytes)
 - `docs/02-agent-execution-spec.zh-CN.md` (41322 bytes) - 完整执行规范，文档回写机制使用通用文档类型+典型示例
@@ -35,6 +36,7 @@
 - `docs/07-non-programmer-workflow.zh-CN.md` - 非程序员使用指南，说明如何通过 Task Intake 参与 AI 协作，无需手写 CommandPack 或 ContextPack
 - `docs/08-commandpack-generation-guide.zh-CN.md` - CommandPack 生成指南，说明如何从 Task Intake / 自然语言生成 CommandPack，含 ContextPack 生命周期判断
 - `docs/09-contextpack-lifecycle.zh-CN.md` - ContextPack 生命周期机制，说明 Bootstrap / Delta / Writeback / L1-L3 演进
+- `docs/10-file-roles-and-usage-modes.zh-CN.md` - 文件角色与使用模式矩阵，轻量入口指南，明确不同用户和不同阶段需要哪些文件
 - `docs/CONTEXT_PACK.md` (1228 bytes) - 项目上下文包，AI 协作长期上下文，重要迭代后应回写
 - `docs/DEV_GUIDE.md` (317 bytes)
 - `docs/MODULE_BOUNDARY.md` (617 bytes) - 模块边界文档，变更模块结构后应回写

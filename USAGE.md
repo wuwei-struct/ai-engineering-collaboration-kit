@@ -1,5 +1,28 @@
 # 使用指南
 
+## 文件很多，但不用一次用完
+
+本套件提供完整工程协作体系，但实际使用时应按项目阶段选择文件。
+
+日常最小输入：
+
+- `skills/codex-ide-executor-zh/SKILL.md`
+- `CommandPack`
+
+持续项目再逐步加入：
+
+- `AGENTS.md`
+- `CONTEXT_PACK.md`
+- `TESTING.md`
+- `MODULE_BOUNDARY.md`
+- `PR_SUMMARIES.md`
+
+完整规范只给维护、审计、教学和复盘使用。
+
+文件选择见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](docs/10-file-roles-and-usage-modes.zh-CN.md)
+
+---
+
 ## 这套规范怎么用
 
 本项目不是让 AI 每次读取完整执行规范。

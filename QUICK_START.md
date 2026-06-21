@@ -1,12 +1,29 @@
 # 快速开始
 
-目标：用 15-30 分钟，把一个普通项目升级成“适合 AI 协作”的项目骨架。
+目标：用 15-30 分钟，把一个普通项目升级成"适合 AI 协作"的项目骨架。
 
 这不是让你一次性写完所有文档，而是先建立最小可用的上下文、边界和门禁。
 
 ---
 
-## 0. 前置原则
+## 0. 最小可用流程
+
+你不需要一开始填写所有文档。
+
+最小只需要：
+
+1. `skills/codex-ide-executor-zh/SKILL.md`
+2. 一个 `CommandPack`
+
+普通用户可以先填写 `templates/TASK_INTAKE.md.template`（任务意图表），再由项目负责人、规划型 AI、CLI 或插件生成 CommandPack。
+
+`.ai_rules.md` 是项目级规则摘要，适合未来 CLI / 插件生成。手工使用时可以先不创建。
+
+文件选择详见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](docs/10-file-roles-and-usage-modes.zh-CN.md)
+
+---
+
+## 1. 前置原则
 
 不要直接让 AI 开始写功能。
 
@@ -32,7 +49,7 @@ your-project/
 
 ---
 
-## 1. 复制基础模板
+## 2. 复制基础模板
 
 从本仓库复制：
 
