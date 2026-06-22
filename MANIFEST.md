@@ -4,7 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
-- 最后更新：v0.1.9 - Lightweight Entry and File Role Matrix
+- 最后更新：v0.1.10 - Controlled Opportunistic Fixes
 
 ## 质量检查
 
@@ -28,7 +28,7 @@
 - `USAGE.md` - 使用指南，含文件选择轻量入口，减重不重复
 - `docs/00-how-to-use-with-ai-agent.zh-CN.md` (AI 工具使用指南)
 - `docs/01-ai-project-collaboration-handbook.zh-CN.md` (18663 bytes)
-- `docs/02-agent-execution-spec.zh-CN.md` (41322 bytes) - 完整执行规范，文档回写机制使用通用文档类型+典型示例
+- `docs/02-agent-execution-spec.zh-CN.md` (41322 bytes) - 完整执行规范，含受控顺手修 / 前置修复白名单和黑名单
 - `docs/03-tool-integration-guide.zh-CN.md` (6286 bytes)
 - `docs/04-faq.zh-CN.md` (4063 bytes)
 - `docs/05-case-study-guide.zh-CN.md` (2883 bytes)
@@ -98,8 +98,8 @@
 - `scripts/check_utf8.py` (3569 bytes)
 - `scripts/init_project_skeleton.py` (2452 bytes)
 - `scripts/validate_project_structure.py` (1511 bytes)
-- `skills/codex-ide-executor-zh/SKILL.md` (路由型 Skill，AI 日常执行入口 / 压缩执行器，包含文档回写规则，使用通用文档类型不绑定特定路径）
-- `skills/codex-ide-executor-zh/SKILL_RUNTIME.md` (可选更短 Runtime 摘要，包含通用文档回写提醒)
+- `skills/codex-ide-executor-zh/SKILL.md` (路由型 Skill，AI 日常执行入口 / 压缩执行器，包含受控顺手修 / 前置修复白名单)
+- `skills/codex-ide-executor-zh/SKILL_RUNTIME.md` (可选更短 Runtime 摘要，包含极简受控顺手修规则)
 - `skills/codex-ide-executor-zh/assets/AGENTS_TEMPLATE.md` (3804 bytes)
 - `skills/codex-ide-executor-zh/assets/CODEX_CUSTOM_INSTRUCTIONS_ZH.md` (577 bytes)
 - `skills/codex-ide-executor-zh/references/ANTI_SPAGHETTI_RULES.md` (1277 bytes)
@@ -107,7 +107,7 @@
 - `skills/codex-ide-executor-zh/references/COMMAND_PACK_SPEC.md` (2779 bytes)
 - `skills/codex-ide-executor-zh/references/CONTEXT_PACK_SPEC.md` (1793 bytes)
 - `skills/codex-ide-executor-zh/references/CONTROLLED_FLEXIBILITY_RULES.md` (1701 bytes)
-- `skills/codex-ide-executor-zh/references/FULL_EXECUTION_SPEC.zh-CN.md` (完整规范引用副本，维护/审计用)
+- `skills/codex-ide-executor-zh/references/FULL_EXECUTION_SPEC.zh-CN.md` (完整规范引用副本，含受控顺手修 / 前置修复白名单和黑名单，维护/审计用)
 - `skills/codex-ide-executor-zh/references/EXECUTION_REPORT_TEMPLATE.md` (3157 bytes)
 - `skills/codex-ide-executor-zh/references/FACT_CONFLICT_RULES.md` (1383 bytes)
 - `skills/codex-ide-executor-zh/references/GIT_AND_ROLLBACK_RULES.md` (871 bytes)
@@ -117,9 +117,9 @@
 - `templates/.gitattributes.template` (329 bytes)
 - `templates/.gitignore.template` (163 bytes)
 - `templates/AGENTS.md.template` (3804 bytes)
-- `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用，包含通用 Documentation Writeback 和 {{PLACEHOLDER}})
+- `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用，包含 Controlled Opportunistic Fixes 和 {{PLACEHOLDER}})
 - `templates/CONTEXT_PACK.md.template` - ContextPack 模板，含 Metadata / L1-L3 / Context Delta Log / Pending Context Updates，支持生命周期维护
-- `templates/CommandPack.md.template` - 任务合同模板，包含通用文档回写要求和 ContextPack 生命周期要求，可由 Task Intake 生成
+- `templates/CommandPack.md.template` - 任务合同模板，包含受控顺手修规则和 ExecutionReport 记录字段，可由 Task Intake 生成
 - `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，含"是否影响项目上下文"字段
 - `templates/PROJECT_INTAKE.md.template` - 项目意图表模板，普通用户填写项目基本情况，可用于生成初始 L1 ContextPack
 - `templates/DEV_GUIDE.md.template` (419 bytes)

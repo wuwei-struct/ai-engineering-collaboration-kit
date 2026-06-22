@@ -139,7 +139,30 @@ STOP if:
 - PowerShell: PowerShell 7 + `-Encoding utf8`
 - Stop immediately if mojibake or Chinese garbling appears.
 
-## 9. Documentation Writeback
+## 9. Controlled Opportunistic Fixes
+
+Allowed when low-risk, same-cause, local, and verifiable.
+
+Allowed examples:
+
+- prerequisite fixes required for the current task;
+- same-cause small fixes;
+- import / type / test / documentation small fixes;
+- small script fix that does not change business semantics.
+
+Forbidden examples:
+
+- secrets / tokens / production config;
+- schema / migration / user data;
+- permission / license / billing;
+- dependency upgrade;
+- cross-module refactor;
+- forbidden paths;
+- unclear business rules.
+
+All controlled fixes must be recorded in ExecutionReport.
+
+## 10. Documentation Writeback
 
 After each task, check whether the change affects long-term project context.
 
@@ -169,7 +192,7 @@ Project-specific documentation paths:
 
 If updates are needed but not authorized, report required documentation writeback in ExecutionReport.
 
-## 10. Output
+## 11. Output
 
 Every task must output ExecutionReport:
 

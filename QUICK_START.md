@@ -467,6 +467,7 @@ docs/TESTING.md（如命令或门禁变化）
 - `.ai_rules.md` / `AGENTS.md` / ContextPack 是项目资料，按需读取。
 - 完整规范是维护 / 审计 / 教学 / 复盘资料，不是日常任务默认上下文。
 - 高风险、不明确或规则冲突时，AI 应 STOP，而不是自行读取完整规范继续执行。
+- 本套件不是要求 AI 机械地遇到任何小问题都 STOP。在低风险、同因、局部、可验证的条件下，AI 可以处理必要的前置小问题和同类小修复。但涉及权限、license、计费、schema、密钥、生产配置、用户数据、依赖升级、跨模块重构时，必须 STOP。
 - CommandPack 是每次任务的具体合同，必须写清楚目标、范围、门禁。
 
 详细说明见 `USAGE.md` 和 `docs/00-how-to-use-with-ai-agent.zh-CN.md`。

@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.10 - Controlled Opportunistic Fixes
+
+### Changed
+- Upgraded controlled small fixes into a clearer controlled opportunistic fix mechanism.
+- Added a precondition fix allowlist for low-risk task blockers.
+- Clarified which same-cause small fixes can be handled directly.
+- Added a hard STOP blacklist for secrets, production config, schema, permissions, license, billing, user data, dependency upgrades, and cross-module refactors.
+- Updated CommandPack and AI rules templates to record controlled fixes in ExecutionReport.
+
 ## v0.1.9 - Lightweight Entry and File Role Matrix
 
 ### Added
