@@ -119,6 +119,12 @@ AI 每次真正需要的是：
 7. 人检查 diff、测试结果、风险和回滚方式
 8. 重要变更写入 `PR_SUMMARIES.md` 和 `CONTEXT_PACK.md`
 
+## 使用任务合同库
+
+当项目有多个任务时，可以使用 `templates/TASK_CONTRACT_LIBRARY.md.template` 管理多个 CommandPack。
+
+注意：合同库不是自动执行授权，只有 active 合同可以执行。
+
 ---
 
 ## Claude / Codex / Cursor 怎么用

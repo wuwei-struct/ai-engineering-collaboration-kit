@@ -23,6 +23,10 @@
 
 - `docs/11-engineering-concepts-foundation.zh-CN.md`
 
+如果你不知道允许修改哪些文件，不需要硬填。
+先填写 Task Intake。
+后续由规划层根据 ContextPack 和项目结构生成 CommandPack。
+
 文件选择详见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](docs/10-file-roles-and-usage-modes.zh-CN.md)
 
 ---

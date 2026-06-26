@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.1.14 - CommandPack Generation Layer
+
+### Added
+- Added `docs/12-commandpack-generation-layer.zh-CN.md`.
+- Added `templates/TASK_CONTRACT_LIBRARY.md.template`.
+- Added the Task Intake → Contract Generator → CommandPack → Task Contract Library → active execution workflow.
+- Added semantic boundary mapping rules.
+- Added inferred path confidence and executor validation requirements.
+- Added task contract library status rules.
+
+### Changed
+- Clarified that ordinary users do not need to write allowed file paths.
+- Updated Task Intake and CommandPack templates to separate user semantic boundaries from inferred engineering paths.
+- Updated non-programmer workflow, CommandPack generation guide, file role matrix, usage docs, and engineering concepts foundation.
+
 ## v0.1.13 - Split ContextPack Layers
 
 ### Changed

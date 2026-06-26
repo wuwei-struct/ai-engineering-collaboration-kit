@@ -1,0 +1,79 @@
+# Task Contract Library / 执行合同库
+
+> 本文件用于管理多个 CommandPack 的状态。
+>
+> 注意：本文件不是自动执行授权。
+> 只有 status 为 `active` 的合同才允许执行。
+
+## 状态说明
+
+- `draft`：刚生成，未确认，不可执行
+- `reviewed`：已审查，但尚未授权执行
+- `active`：当前允许执行
+- `executing`：正在执行
+- `done`：已完成
+- `blocked`：阻塞
+- `superseded`：已被新合同替代
+- `cancelled`：取消
+
+## 执行规则
+
+- 默认同一时间只能有一个 active 合同。
+- pending / draft / reviewed 不是执行授权。
+- done 不得重复执行。
+- blocked 必须先解决阻塞。
+- 批量执行必须显式开启 batch mode。
+- 任一任务失败，必须 STOP。
+
+---
+
+## Contract Index
+
+| ID | Title | Status | Mode | Source | Last Updated |
+|---|---|---|---|---|---|
+| PR-001 |  | draft | SAFE | Task Intake |  |
+
+---
+
+## PR-001：任务标题
+
+- **status**：draft
+- **mode**：SAFE
+- **source**：Task Intake / ContextPack / Repo Scan
+- **created_at**：
+- **updated_at**：
+
+### 1. 用户任务意图摘要
+
+-
+
+### 2. 生成来源
+
+- Task Intake：
+- ContextPack：
+- ModuleBoundary：
+- 项目扫描：
+- 历史 PR：
+- 其他：
+
+### 3. CommandPack 草案
+
+> 可粘贴完整 CommandPack，或链接到独立 CommandPack 文件。
+
+-
+
+### 4. 路径推断说明
+
+- 候选允许路径：
+- 候选禁止路径：
+- 路径来源：
+- 可信度：high / medium / low
+- 是否需要执行前验证：是
+
+### 5. 审查记录
+
+-
+
+### 6. 状态变更记录
+
+-

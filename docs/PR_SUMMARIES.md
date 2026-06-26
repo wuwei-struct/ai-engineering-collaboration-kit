@@ -1,5 +1,13 @@
 # PR_SUMMARIES
 
+## v0.1.14 - CommandPack Generation Layer
+
+- 目标：新增任务合同生成层与执行合同库机制，解决普通用户不知道工程路径、不能直接写完整 CommandPack 的问题。
+- 新增：`docs/12-commandpack-generation-layer.zh-CN.md`
+- 新增模板：`templates/TASK_CONTRACT_LIBRARY.md.template`
+- 更新：Task Intake、CommandPack 模板、CommandPack 生成指南、非程序员流程、文件角色矩阵、工程概念基础、README、QUICK_START、USAGE。
+- 核心规则：普通用户只提供任务意图；规划层根据上下文生成 CommandPack；合同进入执行合同库；只有 active 合同可以执行；执行 Agent 必须验证推断路径。
+
 ## v0.1.13 - Split ContextPack Layers
 
 - 日期：2026-06-26

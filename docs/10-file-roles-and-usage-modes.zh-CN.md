@@ -32,6 +32,7 @@
 | `CommandPack` | 本次任务合同 | 是 |
 | `TASK_INTAKE.md` | 普通用户任务意图表 | 推荐 |
 | `PROJECT_INTAKE.md` | 项目初始化意图表 | 推荐 |
+| `TASK_CONTRACT_LIBRARY.md` | 执行合同库，管理多个 CommandPack 状态 | 多任务时推荐 |
 | `AGENTS.md` | 仓库级项目规则 | 标准模式推荐 |
 | `.ai_rules.md` | 项目级规则摘要 / 未来工具生成物 | 可选 |
 | `CONTEXT_PACK.md` | 上下文入口 + L1 最小可用上下文 | 持续项目推荐 |
@@ -58,6 +59,12 @@
 如果对工程概念不熟悉（门禁、依赖、权限、幂等、schema、migration 等），先阅读：
 
 - `docs/11-engineering-concepts-foundation.zh-CN.md`
+
+Task Intake 是需求输入，不是执行合同。
+CommandPack 是执行合同。
+Task Contract Library 是多个 CommandPack 的状态管理集合。
+
+详见：[`docs/12-commandpack-generation-layer.zh-CN.md`](12-commandpack-generation-layer.zh-CN.md)
 
 ---
 

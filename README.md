@@ -83,6 +83,19 @@
 
 这份文档不是编程教程，而是 AI 编程用户需要理解的工程概念地图。
 
+## 任务合同生成层
+
+普通用户不需要直接写完整 CommandPack。
+
+推荐流程是：
+
+1. 用户填写 Task Intake；
+2. 规划型 AI / 强模型 / 项目负责人生成 CommandPack；
+3. CommandPack 进入执行合同库；
+4. 只有 active 合同可以交给执行 Agent 执行。
+
+详见：[`docs/12-commandpack-generation-layer.zh-CN.md`](docs/12-commandpack-generation-layer.zh-CN.md)
+
 ---
 
 ## 包含内容

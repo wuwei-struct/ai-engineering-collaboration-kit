@@ -4,7 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
-- 最后更新：v0.1.13 - Split ContextPack Layers
+- 最后更新：v0.1.14 - CommandPack Generation Layer
 
 ## 质量检查
 
@@ -33,11 +33,12 @@
 - `docs/04-faq.zh-CN.md` (4063 bytes)
 - `docs/05-case-study-guide.zh-CN.md` (2883 bytes)
 - `docs/06-release-checklist.zh-CN.md` (2945 bytes)
-- `docs/07-non-programmer-workflow.zh-CN.md` - 非程序员使用指南，说明如何通过 Task Intake 参与 AI 协作，无需手写 CommandPack 或 ContextPack
-- `docs/08-commandpack-generation-guide.zh-CN.md` - CommandPack 生成指南，说明如何从 Task Intake / 自然语言生成 CommandPack，含 ContextPack 生命周期判断
+- `docs/07-non-programmer-workflow.zh-CN.md` - 非程序员使用指南，说明如何通过 Task Intake 参与 AI 协作，无需手写 CommandPack 或 ContextPack，含强模型生成建议
+- `docs/08-commandpack-generation-guide.zh-CN.md` - CommandPack 生成指南，说明如何从 Task Intake / 自然语言生成 CommandPack，含 ContextPack 生命周期判断和任务合同生成层
 - `docs/09-contextpack-lifecycle.zh-CN.md` - ContextPack 生命周期机制，说明 Bootstrap / Delta / Writeback / L1-L3 演进
 - `docs/10-file-roles-and-usage-modes.zh-CN.md` - 文件角色与使用模式矩阵，轻量入口指南，明确不同用户和不同阶段需要哪些文件
 - `docs/11-engineering-concepts-foundation.zh-CN.md` - AI 编程工程概念基础地图，使用跨项目通用概念解释 CommandPack、ContextPack、软件结构、通信方式、契约兼容性、错误处理、高风险工程概念、部署上线和可观测性
+- `docs/12-commandpack-generation-layer.zh-CN.md` - 任务合同生成层与执行合同库，说明 Task Intake → CommandPack → Task Contract Library 链路
 - `docs/CONTEXT_PACK.md` - 项目上下文入口与 L1 最小可用上下文
 - `docs/context/CONTEXT_PACK_L2.md` - 深入协作上下文
 - `docs/context/CONTEXT_PACK_L3.md` - 审计 / 交接上下文
@@ -124,9 +125,10 @@
 - `templates/context/CONTEXT_PACK_L2.md.template` - L2 深入协作上下文模板
 - `templates/context/CONTEXT_PACK_L3.md.template` - L3 审计 / 交接上下文模板
 - `templates/CONTEXT_PACK.md.template` - ContextPack 入口模板，含 L1 最小可用上下文和 L2/L3 索引
-- `templates/CommandPack.md.template` - 任务合同模板，包含受控顺手修规则和 ExecutionReport 记录字段，可由 Task Intake 生成
-- `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，含"是否影响项目上下文"字段
+- `templates/CommandPack.md.template` - 任务合同模板，包含用户语义授权、规划层推断路径、执行代理验证要求、受控顺手修规则和 ExecutionReport 记录字段，可由 Task Intake 生成
+- `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，含"是否影响项目上下文"字段，不要求用户填写工程路径
 - `templates/PROJECT_INTAKE.md.template` - 项目意图表模板，普通用户填写项目基本情况，可用于生成初始 L1 ContextPack
+- `templates/TASK_CONTRACT_LIBRARY.md.template` - 执行合同库模板，管理多个 CommandPack 状态，只有 active 合同允许执行
 - `templates/DEV_GUIDE.md.template` (419 bytes)
 - `templates/MODULE_BOUNDARY.md.template` (1174 bytes)
 - `templates/NEXT_PHASE_PLAN.md.template` (214 bytes)
