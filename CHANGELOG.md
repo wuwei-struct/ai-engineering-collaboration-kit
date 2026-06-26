@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.11 - Engineering Concepts Foundation
+
+### Added
+- Added `docs/11-engineering-concepts-foundation.zh-CN.md`.
+- Added an engineering concept map for AI-assisted coding users.
+- Covered basic concepts, CommandPack concepts, ContextPack concepts, testing gates, high-risk concepts, deployment concepts, and AI collaboration concepts.
+
+### Changed
+- Added references from README, QUICK_START, SELF_DIAGNOSIS, and file role matrix to the engineering concepts foundation guide.
+
 ## v0.1.10 - Controlled Opportunistic Fixes
 
 ### Changed

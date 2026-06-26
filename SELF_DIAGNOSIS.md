@@ -162,6 +162,28 @@
 
 ---
 
+## 我是不是缺工程概念基础？
+
+如果你看到下面这些词经常不明白：
+
+- 门禁
+- 依赖
+- 构建
+- schema
+- migration
+- 幂等
+- 并发
+- 权限
+- license
+- 生产配置
+- 回滚
+
+建议先阅读：
+
+- `docs/11-engineering-concepts-foundation.zh-CN.md`
+
+---
+
 ## 快速判断
 
 如果你只勾选了 0-2 项：

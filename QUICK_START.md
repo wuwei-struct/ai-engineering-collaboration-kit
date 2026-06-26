@@ -19,6 +19,10 @@
 
 `.ai_rules.md` 是项目级规则摘要，适合未来 CLI / 插件生成。手工使用时可以先不创建。
 
+如果你看不懂 CommandPack 里的工程词汇，如门禁、依赖、权限、schema、幂等、并发、回滚，可以先看：
+
+- `docs/11-engineering-concepts-foundation.zh-CN.md`
+
 文件选择详见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](docs/10-file-roles-and-usage-modes.zh-CN.md)
 
 ---

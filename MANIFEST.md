@@ -4,7 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
-- 最后更新：v0.1.10 - Controlled Opportunistic Fixes
+- 最后更新：v0.1.11 - Engineering Concepts Foundation
 
 ## 质量检查
 
@@ -37,6 +37,7 @@
 - `docs/08-commandpack-generation-guide.zh-CN.md` - CommandPack 生成指南，说明如何从 Task Intake / 自然语言生成 CommandPack，含 ContextPack 生命周期判断
 - `docs/09-contextpack-lifecycle.zh-CN.md` - ContextPack 生命周期机制，说明 Bootstrap / Delta / Writeback / L1-L3 演进
 - `docs/10-file-roles-and-usage-modes.zh-CN.md` - 文件角色与使用模式矩阵，轻量入口指南，明确不同用户和不同阶段需要哪些文件
+- `docs/11-engineering-concepts-foundation.zh-CN.md` - AI 编程工程概念基础，解释门禁、依赖、权限、幂等、并发、部署、回滚、schema、migration 等概念
 - `docs/CONTEXT_PACK.md` (1228 bytes) - 项目上下文包，AI 协作长期上下文，重要迭代后应回写
 - `docs/DEV_GUIDE.md` (317 bytes)
 - `docs/MODULE_BOUNDARY.md` (617 bytes) - 模块边界文档，变更模块结构后应回写

@@ -1,5 +1,18 @@
 # PR_SUMMARIES
 
+## v0.1.11 - Engineering Concepts Foundation
+
+- 日期：2026-06-26
+- 目标：新增 AI 编程工程概念基础模块，帮助普通用户理解 CommandPack 和工程风险词汇。
+- 新增：`docs/11-engineering-concepts-foundation.zh-CN.md`
+- 更新：README、QUICK_START、SELF_DIAGNOSIS、docs/10、docs/07、MANIFEST、CHANGELOG
+- 核心价值：让用户知道哪些概念是低风险，哪些概念涉及权限、计费、schema、生产配置、密钥和用户数据等高风险区域。
+- 执行门禁：`python scripts/check_utf8.py .`、`python scripts/validate_project_structure.py .`
+- 风险：仅新增文档模块和入口引用，未修改 Skill、模板、脚本、示例。
+- 回滚方式：`git revert` 到 v0.1.10。
+
+---
+
 ## PR-002：v0.1.10 - Controlled Opportunistic Fixes
 
 - 日期：2026-06-22

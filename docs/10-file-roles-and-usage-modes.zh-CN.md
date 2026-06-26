@@ -53,6 +53,10 @@
 
 不要一开始读完整规范。
 
+如果对工程概念不熟悉（门禁、依赖、权限、幂等、schema、migration 等），先阅读：
+
+- `docs/11-engineering-concepts-foundation.zh-CN.md`
+
 ---
 
 ## 5. 半懂代码用户从哪里开始
