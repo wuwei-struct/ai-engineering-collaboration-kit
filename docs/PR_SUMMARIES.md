@@ -1,5 +1,16 @@
 # PR_SUMMARIES
 
+## v0.1.12 - Generalized Engineering Concepts
+
+- 日期：2026-06-26
+- 目标：将工程概念基础文档从偏 Electron/Web 的具体概念重构为跨项目通用的软件工程概念地图。
+- 变更：重构第 5 节为"软件结构与通信概念"，新增契约与兼容性、错误处理与稳定性、可观测性等通用概念。
+- 调整：IPC、component、view、store 降级为具体实现例子，不再作为所有项目的一级通用概念。
+- 价值：让文档更适用于 Web、Electron、CLI、后端服务、小程序、插件、脚本工具和 AI 应用等多种项目类型。
+- 执行门禁：`python scripts/check_utf8.py .`、`python scripts/validate_project_structure.py .`
+- 风险：仅重构文档结构和概念层级，未修改 Skill、模板、脚本、示例。
+- 回滚方式：`git revert` 到 v0.1.11。
+
 ## v0.1.11 - Engineering Concepts Foundation
 
 - 日期：2026-06-26

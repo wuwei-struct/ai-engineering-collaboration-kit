@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.12 - Generalized Engineering Concepts
+
+### Changed
+- Refactored the engineering concepts foundation guide to use more general software engineering concepts.
+- Replaced Electron/Web-specific first-level concepts with cross-project abstractions such as communication methods, runtime forms, layered structure, code roles, state management, and contracts.
+- Demoted IPC, component, view, and store into examples instead of treating them as universal first-level concepts.
+- Added contract, compatibility, breaking change, side effect, error handling, timeout, retry, fallback, runtime, process, port, protocol, persistence, observability, monitoring, alert, tracing, and lockfile concepts.
+- Updated the concept risk table to include contracts, breaking changes, lockfile changes, and side effects.
+
 ## v0.1.11 - Engineering Concepts Foundation
 
 ### Added
