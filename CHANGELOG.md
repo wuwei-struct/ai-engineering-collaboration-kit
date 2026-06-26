@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.16 - README Story and Visual Flow
+
+### Changed
+- Added a pain-point section to the README to help users quickly recognize common AI coding workflow problems.
+- Added a Vibe Coding vs AI Engineering Collaboration comparison table.
+- Added a Mermaid core workflow diagram covering Task Intake, Contract Generator, CommandPack, Task Contract Library, ExecutionReport, Context Delta, and ContextPack writeback.
+- Clarified that the project is not an automatic coding tool, but an engineering collaboration rule base for AI-assisted coding.
+
 ## v0.1.15 - README Structure Sync
 
 ### Changed

@@ -1,5 +1,11 @@
 # PR_SUMMARIES
 
+## v0.1.16 - README Story and Visual Flow
+
+- 目标：增强 README 的第一印象表达，让用户快速理解"我也遇到过这些问题"。
+- 更新：新增痛点共鸣区、Vibe Coding vs AI Engineering Collaboration 对比表、核心闭环 Mermaid 流程图。
+- 核心价值：README 不再只是文件和规范说明，而是先讲清楚 AI 编程为什么会乱，以及本 Kit 如何通过任务合同、上下文路由、门禁、报告和回写形成工程协作闭环。
+
 ## v0.1.15 - README Structure Sync
 
 - 目标：同步 README 中过期的"本仓库结构"区块。

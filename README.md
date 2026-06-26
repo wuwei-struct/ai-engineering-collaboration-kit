@@ -21,6 +21,64 @@
 
 > 项目如何给 AI 提供足够清楚的上下文、边界、规则和验证方式，让 AI 在真实仓库中稳定工作。
 
+## 你可能遇到过这些问题
+
+AI 明明能写代码，但项目越改越乱。
+
+你可能遇到过：
+
+- AI 顺手重构了不该动的文件；
+- 新逻辑被塞进 `main.js`、`index.js`、`App.tsx` 这类中央大文件；
+- 每次新对话都要重新解释项目背景；
+- AI 没有跑测试，却说"已经完成"；
+- 中文文档、UI 文案或 Markdown 被写乱码；
+- 你反复提醒 AI：不要动登录、支付、license、数据库；
+- 文档写了但不更新，ContextPack、ModuleBoundary、PR 记录慢慢变成死文件；
+- 改完以后不知道怎么回滚，也不知道 AI 到底改了哪些地方。
+
+这套 Kit 解决的不是"让 AI 更自由"，而是让 AI 在上下文、任务合同、修改边界、质量门禁和回滚规则下执行。
+
+## 从 vibe coding 到工程协作
+
+| Vibe Coding | AI Engineering Collaboration |
+|---|---|
+| 用户临时描述需求 | Task Intake 结构化采集任务意图 |
+| AI 凭感觉改代码 | CommandPack 锁定本次执行合同 |
+| 不知道该读哪些上下文 | ContextPack L1 / L2 / L3 按风险读取 |
+| 允许范围不清楚 | 用户语义边界 → 规划层推断路径 → 执行代理验证 |
+| 乱改文件、顺手重构 | allowed / forbidden paths + STOP 条件 |
+| 没跑测试也说完成 | gates + ExecutionReport |
+| 文档创建后不更新 | Context Delta + Context Writeback |
+| 多个任务容易混乱 | Task Contract Library 只允许 active 合同执行 |
+| 项目记忆断裂 | PR_SUMMARIES / NEXT_PHASE_PLAN / ContextPack 持续沉淀 |
+
+## 核心闭环
+
+```mermaid
+flowchart TD
+  A[普通用户需求] --> B[Task Intake / 任务意图表]
+  B --> C[Contract Generator / 任务合同生成层]
+  C --> D[CommandPack / 执行任务合同]
+  D --> E[Task Contract Library / 执行合同库]
+  E --> F[Active Contract / 当前授权合同]
+  F --> G[External Coding Agent / Codex、Claude Code、Cursor、IDE Agent]
+  G --> H[ExecutionReport / 执行回执]
+  H --> I[Review / 审查]
+  I --> J[Context Delta / 上下文变化]
+  J --> K[ContextPack / PR_SUMMARIES / NEXT_PHASE_PLAN 回写]
+```
+
+这条链路的核心是：
+
+- 普通用户不需要直接写完整 CommandPack；
+- 任务合同由规划层根据上下文生成；
+- 只有 active 合同可以交给执行 Agent；
+- 执行结果必须通过 ExecutionReport 回传；
+- 项目真实变化通过 Context Delta 回写到长期上下文。
+
+它不是一键自动写代码工具，也不替代人的产品判断。
+它更像是 AI 编程项目的工程协作规则底座：负责上下文、任务合同、边界、门禁、回滚和报告。
+
 ## 核心原则
 
 > 人负责方向、边界、判断和验收。  
@@ -452,7 +510,7 @@ ai-engineering-collaboration-kit/
 
 ## 版本状态
 
-当前版本：`v0.1.14`
+当前版本：`v0.1.16`
 
 完整版本记录详见 `CHANGELOG.md` 和 `docs/PR_SUMMARIES.md`。
 
