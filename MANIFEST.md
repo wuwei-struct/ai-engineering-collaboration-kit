@@ -4,7 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
-- 最后更新：v0.1.12 - Generalized Engineering Concepts
+- 最后更新：v0.1.13 - Split ContextPack Layers
 
 ## 质量检查
 
@@ -38,7 +38,9 @@
 - `docs/09-contextpack-lifecycle.zh-CN.md` - ContextPack 生命周期机制，说明 Bootstrap / Delta / Writeback / L1-L3 演进
 - `docs/10-file-roles-and-usage-modes.zh-CN.md` - 文件角色与使用模式矩阵，轻量入口指南，明确不同用户和不同阶段需要哪些文件
 - `docs/11-engineering-concepts-foundation.zh-CN.md` - AI 编程工程概念基础地图，使用跨项目通用概念解释 CommandPack、ContextPack、软件结构、通信方式、契约兼容性、错误处理、高风险工程概念、部署上线和可观测性
-- `docs/CONTEXT_PACK.md` (1228 bytes) - 项目上下文包，AI 协作长期上下文，重要迭代后应回写
+- `docs/CONTEXT_PACK.md` - 项目上下文入口与 L1 最小可用上下文
+- `docs/context/CONTEXT_PACK_L2.md` - 深入协作上下文
+- `docs/context/CONTEXT_PACK_L3.md` - 审计 / 交接上下文
 - `docs/DEV_GUIDE.md` (317 bytes)
 - `docs/MODULE_BOUNDARY.md` (617 bytes) - 模块边界文档，变更模块结构后应回写
 - `docs/NEXT_PHASE_PLAN.md` (287 bytes)
@@ -119,7 +121,9 @@
 - `templates/.gitignore.template` (163 bytes)
 - `templates/AGENTS.md.template` (3804 bytes)
 - `templates/AI_RULES.md.template` (项目级规则摘要模板，按需使用，包含 Controlled Opportunistic Fixes 和 {{PLACEHOLDER}})
-- `templates/CONTEXT_PACK.md.template` - ContextPack 模板，含 Metadata / L1-L3 / Context Delta Log / Pending Context Updates，支持生命周期维护
+- `templates/context/CONTEXT_PACK_L2.md.template` - L2 深入协作上下文模板
+- `templates/context/CONTEXT_PACK_L3.md.template` - L3 审计 / 交接上下文模板
+- `templates/CONTEXT_PACK.md.template` - ContextPack 入口模板，含 L1 最小可用上下文和 L2/L3 索引
 - `templates/CommandPack.md.template` - 任务合同模板，包含受控顺手修规则和 ExecutionReport 记录字段，可由 Task Intake 生成
 - `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，含"是否影响项目上下文"字段
 - `templates/PROJECT_INTAKE.md.template` - 项目意图表模板，普通用户填写项目基本情况，可用于生成初始 L1 ContextPack

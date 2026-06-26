@@ -34,7 +34,9 @@
 | `PROJECT_INTAKE.md` | 项目初始化意图表 | 推荐 |
 | `AGENTS.md` | 仓库级项目规则 | 标准模式推荐 |
 | `.ai_rules.md` | 项目级规则摘要 / 未来工具生成物 | 可选 |
-| `CONTEXT_PACK.md` | 项目长期上下文 | 持续项目推荐 |
+| `CONTEXT_PACK.md` | 上下文入口 + L1 最小可用上下文 | 持续项目推荐 |
+| `context/CONTEXT_PACK_L2.md` | 深入协作上下文 | 中大型项目推荐 |
+| `context/CONTEXT_PACK_L3.md` | 审计 / 交接上下文 | 发布 / 审计阶段推荐 |
 | `MODULE_BOUNDARY.md` | 模块边界与防屎山文档 | 中大型项目推荐 |
 | `TESTING.md` | 测试与门禁说明 | 持续项目推荐 |
 | `PR_SUMMARIES.md` | 迭代历史 | 长期项目推荐 |

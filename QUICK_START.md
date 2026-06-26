@@ -150,7 +150,16 @@ templates/AGENTS.md.template
 
 ContextPack 是给 AI 快速读取的项目上下文包。
 
+默认推荐分层结构：
+
+- `docs/CONTEXT_PACK.md`：L1 上下文入口（普通用户通常只需要维护这个）。
+- `docs/context/CONTEXT_PACK_L2.md`：深入协作上下文。
+- `docs/context/CONTEXT_PACK_L3.md`：审计 / 交接上下文。
+
 ContextPack 不应该等项目后期才一次性生成。推荐从项目开始就建立 L1，每个重要任务后记录 Context Delta。
+
+普通用户通常只需要维护 `docs/CONTEXT_PACK.md` 的 L1。
+复杂项目或长期项目可以逐步补充 L2 / L3。
 
 最小版本写清楚：
 

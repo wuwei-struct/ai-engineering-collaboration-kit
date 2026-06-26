@@ -79,6 +79,15 @@ CommandPack 可以来自：
 
 包含上下文不足、路径冲突、业务规则不清、密钥、生产配置、乱码风险等。
 
+## ContextPack 读取策略
+
+生成 CommandPack 时，应根据任务风险决定上下文读取范围：
+
+- FAST：默认读取 `docs/CONTEXT_PACK.md` 的 L1。
+- SAFE：读取 L1，必要时追加 `docs/context/CONTEXT_PACK_L2.md`。
+- AUDIT：读取 L1 + L2 + L3，并补充专项文档。
+- STOP：当任务需要 L3 但 L3 缺失或明显过期时，应先补上下文，不要直接执行。
+
 ### Step 9：判断 ContextPack 生命周期
 
 生成 CommandPack 时，应判断：

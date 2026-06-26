@@ -154,7 +154,15 @@
 - `scripts/`
 - `examples/`
 
-## ContextPack 应从项目开始维护
+## ContextPack 分层
+
+默认推荐：
+
+- `docs/CONTEXT_PACK.md`：L1 最小上下文入口
+- `docs/context/CONTEXT_PACK_L2.md`：深入协作上下文
+- `docs/context/CONTEXT_PACK_L3.md`：审计 / 交接上下文
+
+AI 不应每次默认读取全部上下文，而应按任务风险读取对应层级。
 
 ContextPack 不应该等项目后期才一次性生成。
 

@@ -21,6 +21,18 @@
 
 文件选择见：[`docs/10-file-roles-and-usage-modes.zh-CN.md`](docs/10-file-roles-and-usage-modes.zh-CN.md)
 
+## ContextPack 分层使用
+
+ContextPack 默认推荐分层结构：
+
+- L1（`docs/CONTEXT_PACK.md`）：最小可用上下文，普通任务只需读取此文件。
+- L2（`docs/context/CONTEXT_PACK_L2.md`）：深入协作上下文，中等复杂任务读取 L1 + L2。
+- L3（`docs/context/CONTEXT_PACK_L3.md`）：审计 / 交接上下文，高风险任务读取 L1 + L2 + L3。
+
+AI 不应每次默认读取全部上下文，而应按任务风险选择对应层级。
+
+普通用户通常只需要维护 L1。复杂项目或长期项目可以逐步补充 L2 / L3。
+
 ---
 
 ## 这套规范怎么用

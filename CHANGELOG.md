@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.13 - Split ContextPack Layers
+
+### Changed
+- Split ContextPack into an entry L1 file plus dedicated L2 and L3 context files.
+- Updated `docs/CONTEXT_PACK.md` to act as the AI context entry and L1 minimal context.
+- Added `docs/context/CONTEXT_PACK_L2.md` for deeper collaboration context.
+- Added `docs/context/CONTEXT_PACK_L3.md` for audit, handoff, architecture, and high-risk context.
+- Updated ContextPack templates to support the split structure.
+- Updated usage docs to clarify that AI should read context by task risk instead of always reading all context.
+
 ## v0.1.12 - Generalized Engineering Concepts
 
 ### Changed

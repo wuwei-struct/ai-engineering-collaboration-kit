@@ -76,13 +76,29 @@ Context Delta 至少包括：
 - 为什么需要更新
 - 是否阻断下一轮任务
 
-## 6. L1 / L2 / L3 演进
+## 6. L1 / L2 / L3 拆分结构
+
+默认推荐结构：
+
+- `docs/CONTEXT_PACK.md`：上下文入口 + L1 最小可用上下文
+- `docs/context/CONTEXT_PACK_L2.md`：深入协作上下文
+- `docs/context/CONTEXT_PACK_L3.md`：审计 / 交接上下文
+
+L1 / L2 / L3 是上下文密度层级，不只是文件名。
+
+普通任务只需要 L1；
+中等复杂任务读取 L1 + L2；
+高风险、架构、权限、计费、数据库、迁移、发布任务读取 L1 + L2 + L3。
+
+小项目仍可使用单文件模式，但长期项目建议采用拆分结构。
 
 ### L1：最小可用上下文
 
-用于普通任务。
+用于普通任务。位于 `docs/CONTEXT_PACK.md`，是 AI 进入项目时的上下文入口。
 
 ### L2：深入协作上下文
+
+位于 `docs/context/CONTEXT_PACK_L2.md`。
 
 当项目开始跨模块、多人协作、长期迭代时，补充：
 
@@ -93,6 +109,8 @@ Context Delta 至少包括：
 - 最近 PR 摘要
 
 ### L3：审计交接上下文
+
+位于 `docs/context/CONTEXT_PACK_L3.md`。
 
 当项目进入发布、重构、迁移、审计阶段时，补充：
 

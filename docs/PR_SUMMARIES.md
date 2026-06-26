@@ -1,5 +1,17 @@
 # PR_SUMMARIES
 
+## v0.1.13 - Split ContextPack Layers
+
+- 日期：2026-06-26
+- 目标：将 ContextPack 从单文件 L1/L2/L3 结构升级为入口索引 + 分层文件结构。
+- 新增：`docs/context/CONTEXT_PACK_L2.md`、`docs/context/CONTEXT_PACK_L3.md`。
+- 新增模板：`templates/context/CONTEXT_PACK_L2.md.template`、`templates/context/CONTEXT_PACK_L3.md.template`。
+- 更新：`docs/CONTEXT_PACK.md`、ContextPack 生命周期文档、CommandPack 生成指南、文件角色矩阵、README、QUICK_START、USAGE。
+- 核心规则：普通任务读 L1，中等任务读 L1+L2，高风险/审计任务读 L1+L2+L3。
+- 执行门禁：`python scripts/check_utf8.py .`、`python scripts/validate_project_structure.py .`
+- 风险：仅拆分文档结构，未修改 Skill、模板逻辑、脚本、示例。
+- 回滚方式：`git revert` 到 v0.1.12。
+
 ## v0.1.12 - Generalized Engineering Concepts
 
 - 日期：2026-06-26
