@@ -384,51 +384,77 @@ your-project/
 
 ## 本仓库结构
 
+> 以下为核心结构概览。完整、最新的文件清单以 `MANIFEST.md` 为准。
+
 ```txt
 ai-engineering-collaboration-kit/
   README.md
+  USAGE.md
   SELF_DIAGNOSIS.md
   QUICK_START.md
+  AGENTS.md
+  MANIFEST.md
+  CHANGELOG.md
+  LICENSE*
+
   docs/
+    00-how-to-use-with-ai-agent.zh-CN.md
     01-ai-project-collaboration-handbook.zh-CN.md
     02-agent-execution-spec.zh-CN.md
-    03-tool-integration-guide.zh-CN.md
-    04-faq.zh-CN.md
-    05-case-study-guide.zh-CN.md
-    06-release-checklist.zh-CN.md
+    ...
+    12-commandpack-generation-layer.zh-CN.md
+
+    CONTEXT_PACK.md              # L1：上下文入口
+    context/
+      CONTEXT_PACK_L2.md          # L2：深入协作上下文
+      CONTEXT_PACK_L3.md          # L3：审计 / 交接上下文
+
+    MODULE_BOUNDARY.md
+    TESTING.md
+    PR_SUMMARIES.md
+    PRODUCT_BRIEF.md
+    PRODUCT_ARCHITECTURE.md
+    DEV_GUIDE.md
+    NEXT_PHASE_PLAN.md
+
   skills/
     codex-ide-executor-zh/
       SKILL.md
+      SKILL_RUNTIME.md
       references/
       scripts/
       assets/
+
   templates/
+    TASK_INTAKE.md.template
+    CommandPack.md.template
+    TASK_CONTRACT_LIBRARY.md.template
+    CONTEXT_PACK.md.template
+    context/
+      CONTEXT_PACK_L2.md.template
+      CONTEXT_PACK_L3.md.template
+    AGENTS.md.template
+    AI_RULES.md.template
+    MODULE_BOUNDARY.md.template
+    TESTING.md.template
+    ...
+
   scripts/
+    check_utf8.py
+    validate_project_structure.py
+    init_project_skeleton.py
+
   examples/
+    01-simple-node-cli/
+    02-electron-app/
+    03-web-service/
 ```
 
 ## 版本状态
 
-当前版本：`v0.1.0`
+当前版本：`v0.1.14`
 
-定位：中文首发版，重点验证 AI 工程协作框架的核心闭环。
-
-当前已包含：
-
-- 项目协作手册。
-- AI 执行规范 v1.2。
-- Codex/IDE Skill 包。
-- 常用项目模板。
-- UTF-8 检查脚本。
-- 示例项目骨架。
-
-后续计划：
-
-- 增加更多真实案例。
-- 补充英文版 README 和核心文档。
-- 增加 GitHub Actions 示例。
-- 增加 pre-commit hook 示例。
-- 增加更多工具集成指南。
+完整版本记录详见 `CHANGELOG.md` 和 `docs/PR_SUMMARIES.md`。
 
 ## License
 

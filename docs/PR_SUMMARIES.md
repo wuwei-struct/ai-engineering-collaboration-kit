@@ -1,5 +1,11 @@
 # PR_SUMMARIES
 
+## v0.1.15 - README Structure Sync
+
+- 目标：同步 README 中过期的"本仓库结构"区块。
+- 更新：README 仓库结构改为核心结构概览，体现 docs/12、ContextPack 分层、Task Intake、CommandPack、Task Contract Library 和 templates/context。
+- 核心规则：README 只展示核心结构，完整文件清单以 `MANIFEST.md` 为准，避免 README 成为高维护成本的全量清单。
+
 ## v0.1.14 - CommandPack Generation Layer
 
 - 目标：新增任务合同生成层与执行合同库机制，解决普通用户不知道工程路径、不能直接写完整 CommandPack 的问题。

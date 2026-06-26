@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.15 - README Structure Sync
+
+### Changed
+- Updated the README repository structure section to reflect the current v0.1.x layout.
+- Added ContextPack L1/L2/L3 split structure to the README overview.
+- Added Task Intake, CommandPack, Task Contract Library, and template context structure to the README overview.
+- Clarified that README only shows the core structure overview and the full file list is maintained in `MANIFEST.md`.
+
 ## v0.1.14 - CommandPack Generation Layer
 
 ### Added
