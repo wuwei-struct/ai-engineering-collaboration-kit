@@ -1,0 +1,43 @@
+# DOCS_MAP / 文档地图
+
+> 本文件用于说明项目中重要文档的位置、用途、阅读时机和更新时机。
+>
+> 完整文件清单以 `MANIFEST.md` 为准。
+> 项目上下文本身以 `docs/CONTEXT_PACK.md` 和相关上下文文档为准。
+
+## 1. 文档类型标签
+
+| 标签 | 含义 | 典型用途 |
+|---|---|---|
+| ENTRY | 入口文档 | 新用户、新 AI 进入项目时先看 |
+| RUNTIME | 运行时文档 | AI 执行任务时可能需要读取 |
+| CONTRACT | 任务合同相关 | Task Intake、CommandPack、合同库 |
+| CONTEXT | 项目上下文 | 项目状态、模块、阶段、风险 |
+| REFERENCE | 参考说明 | 方法说明、概念解释、FAQ |
+| HISTORY | 历史记录 | PR 记录、变更历史、版本变化 |
+| AUDIT | 审计 / 高风险 | 架构、权限、数据库、发布前审查 |
+| TEMPLATE | 模板 | 用于复制或生成项目文件 |
+
+## 2. 核心文档地图
+
+| 文档 | 类型 | 主要内容 | 谁会读 | 什么时候读 | 什么时候更新 |
+|---|---|---|---|---|---|
+| `README.md` | ENTRY | 项目入口说明 | 所有人 | 第一次了解项目 | 项目定位或入口变化时 |
+| `docs/CONTEXT_PACK.md` | CONTEXT / RUNTIME | L1 项目上下文入口 | AI / 规划者 | 普通任务、首次进入项目 | 项目状态变化时 |
+| `docs/MODULE_BOUNDARY.md` | CONTEXT / AUDIT | 模块边界 | AI / 维护者 | 新功能、重构、跨模块任务 | 模块职责变化时 |
+| `docs/TESTING.md` | RUNTIME / REFERENCE | 测试门禁 | AI / 维护者 | 执行门禁时 | 测试命令变化时 |
+| `docs/PR_SUMMARIES.md` | HISTORY | 任务历史 | 维护者 / AI | 查历史时 | 重要任务完成后 |
+
+## 3. 文档读取策略
+
+- FAST：只读最小必要文档。
+- SAFE：读取 L1 + 相关模块 / 测试文档。
+- AUDIT：读取 L1 + L2 + L3 + 相关专项文档。
+- 不要默认读取全部文档。
+
+## 4. 文档更新策略
+
+- 新增重要文档时，更新本文件。
+- 新增、删除、重命名文件时，更新 `MANIFEST.md`。
+- 项目状态变化时，更新 ContextPack。
+- 重要任务完成后，更新 PR_SUMMARIES。

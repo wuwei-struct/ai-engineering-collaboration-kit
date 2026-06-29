@@ -4,7 +4,7 @@
 
 - 生成时间：2026-06-17 01:49:22
 - 文件数量：106
-- 最后更新：v0.1.14 - CommandPack Generation Layer
+- 最后更新：v0.1.17 - Docs Map
 
 ## 质量检查
 
@@ -39,6 +39,7 @@
 - `docs/10-file-roles-and-usage-modes.zh-CN.md` - 文件角色与使用模式矩阵，轻量入口指南，明确不同用户和不同阶段需要哪些文件
 - `docs/11-engineering-concepts-foundation.zh-CN.md` - AI 编程工程概念基础地图，使用跨项目通用概念解释 CommandPack、ContextPack、软件结构、通信方式、契约兼容性、错误处理、高风险工程概念、部署上线和可观测性
 - `docs/12-commandpack-generation-layer.zh-CN.md` - 任务合同生成层与执行合同库，说明 Task Intake → CommandPack → Task Contract Library 链路
+- `docs/DOCS_MAP.md` - 文档地图，说明重要文档的用途、阅读时机和更新时机
 - `docs/CONTEXT_PACK.md` - 项目上下文入口与 L1 最小可用上下文
 - `docs/context/CONTEXT_PACK_L2.md` - 深入协作上下文
 - `docs/context/CONTEXT_PACK_L3.md` - 审计 / 交接上下文
@@ -129,6 +130,7 @@
 - `templates/TASK_INTAKE.md.template` - 任务意图表模板，普通用户填写自然语言任务需求，含"是否影响项目上下文"字段，不要求用户填写工程路径
 - `templates/PROJECT_INTAKE.md.template` - 项目意图表模板，普通用户填写项目基本情况，可用于生成初始 L1 ContextPack
 - `templates/TASK_CONTRACT_LIBRARY.md.template` - 执行合同库模板，管理多个 CommandPack 状态，只有 active 合同允许执行
+- `templates/DOCS_MAP.md.template` - 文档地图模板，用于项目初始化时生成文档路由层
 - `templates/DEV_GUIDE.md.template` (419 bytes)
 - `templates/MODULE_BOUNDARY.md.template` (1174 bytes)
 - `templates/NEXT_PHASE_PLAN.md.template` (214 bytes)

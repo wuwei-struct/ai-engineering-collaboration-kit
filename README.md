@@ -440,6 +440,16 @@ your-project/
   .gitignore
 ```
 
+## 文档地图
+
+当仓库文档变多时，可以先看：
+
+- `docs/DOCS_MAP.md`
+
+它记录每份重要文档的用途、阅读时机和更新时机。
+
+`README.md` 负责项目入口，`MANIFEST.md` 负责完整文件清单，`DOCS_MAP.md` 负责文档路由。
+
 ## 本仓库结构
 
 > 以下为核心结构概览。完整、最新的文件清单以 `MANIFEST.md` 为准。

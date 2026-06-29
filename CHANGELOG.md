@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.17 - Docs Map
+
+### Added
+- Added `docs/DOCS_MAP.md` as a documentation map and routing layer.
+- Added `templates/DOCS_MAP.md.template`.
+- Added document type tags such as ENTRY, RUNTIME, CONTRACT, CONTEXT, REFERENCE, HISTORY, AUDIT, and TEMPLATE.
+- Added reading and update strategies for project documents.
+
+### Changed
+- Added README entry for DOCS_MAP.
+- Updated file role guidance to clarify the difference between README, MANIFEST, DOCS_MAP, and ContextPack.
+- Updated CommandPack generation and ContextPack lifecycle docs to reference DOCS_MAP when selecting documents.
+
 ## v0.1.16 - README Story and Visual Flow
 
 ### Changed

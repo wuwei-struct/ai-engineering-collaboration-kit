@@ -1,5 +1,13 @@
 # PR_SUMMARIES
 
+## v0.1.17 - Docs Map
+
+- 目标：新增文档地图机制，解决 docs 文档变多后难以判断"该读哪份、该更新哪份"的问题。
+- 新增：`docs/DOCS_MAP.md`
+- 新增模板：`templates/DOCS_MAP.md.template`
+- 更新：README、MANIFEST、文件角色矩阵、CommandPack 生成指南、ContextPack 生命周期文档。
+- 核心规则：README 是项目入口，MANIFEST 是全量文件清单，DOCS_MAP 是文档用途与读取地图，ContextPack 是项目上下文。
+
 ## v0.1.16 - README Story and Visual Flow
 
 - 目标：增强 README 的第一印象表达，让用户快速理解"我也遇到过这些问题"。

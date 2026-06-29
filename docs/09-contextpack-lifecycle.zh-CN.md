@@ -151,6 +151,16 @@ ContextPack 不要求普通用户手写。项目启动时可以先通过 `PROJEC
 
 如果没有 ContextPack，但任务复杂度超过小修，应优先建立 L1。
 
+## DOCS_MAP 与 ContextPack 的关系
+
+`DOCS_MAP.md` 不替代 ContextPack。
+
+- `DOCS_MAP.md` 说明文档在哪里、做什么、什么时候读。
+- `CONTEXT_PACK.md` 保存项目当前上下文。
+- `CONTEXT_PACK_L2.md` 和 `CONTEXT_PACK_L3.md` 保存更深层协作、审计和交接上下文。
+
+如果新增了重要上下文文档，应同步更新 `DOCS_MAP.md`。
+
 ## 10. 一句话
 
 ContextPack 不是一次性文档。  
