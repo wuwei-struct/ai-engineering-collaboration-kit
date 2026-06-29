@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.18 - Docs Map Routing Rules
+
+### Changed
+- Strengthened DOCS_MAP as the documentation routing layer.
+- Added formal rules for updating DOCS_MAP when important documents are added, deleted, or renamed.
+- Added DOCS_MAP-first context selection guidance for CommandPack generation.
+- Updated CommandPack template to record context selection based on DOCS_MAP.
+- Clarified that README is the project entry, MANIFEST is the full file list, DOCS_MAP is the documentation routing map, and ContextPack is project context.
+
 ## v0.1.17 - Docs Map
 
 ### Added

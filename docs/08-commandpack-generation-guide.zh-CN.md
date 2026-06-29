@@ -119,21 +119,24 @@ CommandPack 可以来自：
 - 不清楚就让执行代理 STOP。
 - 高风险任务必须写清授权、验收、回滚。
 
-## 使用 DOCS_MAP 辅助生成 CommandPack
+### DOCS_MAP-first CommandPack 生成流程
 
-当仓库文档较多时，规划层生成 CommandPack 前，可以先读取：
+当仓库文档较多时，生成 CommandPack 不应默认读取全部文档。
 
-- `docs/DOCS_MAP.md`
+推荐流程：
 
-用于判断：
+1. 读取 Task Intake / 用户任务意图。
+2. 读取 `docs/DOCS_MAP.md`，判断本任务可能涉及哪些文档类型。
+3. 根据任务模式选择上下文：
+   - FAST：读取最小必要文档；
+   - SAFE：读取 L1 ContextPack，必要时读取 L2、MODULE_BOUNDARY、TESTING；
+   - AUDIT：读取 L1 + L2 + L3，并补充相关专项文档。
+4. 生成 CommandPack 时，在"必读上下文"中明确列出实际需要读取的文档。
+5. 如果 DOCS_MAP 显示相关文档缺失、过期或冲突，应在 CommandPack 中加入 STOP 条件或先要求补上下文。
 
-- 本次任务应该读取哪些上下文；
-- 是否需要 ContextPack L2 / L3；
-- 是否需要 MODULE_BOUNDARY；
-- 是否需要 TESTING；
-- 是否需要历史记录或专项文档。
+注意：
 
-注意：DOCS_MAP 只帮助选择文档，不替代 CommandPack 本身。
+DOCS_MAP 只负责帮助选择文档，不替代任务判断，也不替代 CommandPack。
 
 ## 5. 任务合同生成层
 

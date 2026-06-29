@@ -109,6 +109,18 @@ Task Contract Library 是多个 CommandPack 的状态管理集合。
 
 `MANIFEST.md` 记录完整文件清单，`DOCS_MAP.md` 记录重要文档的用途、阅读时机和更新时机。
 
+### DOCS_MAP 的维护规则
+
+`docs/DOCS_MAP.md` 是文档路由层。
+
+当新增、删除、重命名重要文档时，应同步更新：
+
+- `MANIFEST.md`：维护完整文件清单；
+- `docs/DOCS_MAP.md`：维护文档用途、读取时机、更新时机；
+- `docs/PR_SUMMARIES.md`：记录重要文档变化。
+
+当生成 CommandPack 时，可以先读取 `docs/DOCS_MAP.md` 判断本任务需要哪些上下文文档。
+
 ---
 
 ## 9. 一句话

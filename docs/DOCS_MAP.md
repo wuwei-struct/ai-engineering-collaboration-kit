@@ -117,6 +117,20 @@
 
 ## 5. 文档读取策略
 
+### DOCS_MAP-first 读取策略
+
+当仓库文档较多时，规划层或 AI 不应盲目读取整个 `docs/` 目录。
+
+推荐流程：
+
+1. 先读取当前 CommandPack 或任务意图。
+2. 读取 `docs/DOCS_MAP.md` 判断相关文档类型。
+3. 根据任务风险选择：
+   - FAST：只读最小必要文档；
+   - SAFE：读 L1 + 必要 L2 / MODULE_BOUNDARY / TESTING；
+   - AUDIT：读 L1 + L2 + L3 + 相关专项文档。
+4. 如果 DOCS_MAP 显示目标文档缺失或过期，应 STOP 并报告上下文缺口。
+
 ### FAST 任务
 
 通常只需要：
@@ -167,3 +181,32 @@
 - 重要 PR 完成：更新 `docs/PR_SUMMARIES.md`。
 - 下一阶段计划变化：更新 `docs/NEXT_PHASE_PLAN.md`。
 - 合同生成流程变化：更新 `docs/08-commandpack-generation-guide.zh-CN.md` 或 `docs/12-commandpack-generation-layer.zh-CN.md`。
+
+### 6.1 重要文档变更同步规则
+
+当新增、删除、重命名重要文档时，必须同步检查以下文件：
+
+1. `MANIFEST.md`
+   - 记录文件是否存在；
+   - 记录文件路径；
+   - 维护完整文件清单。
+
+2. `docs/DOCS_MAP.md`
+   - 记录该文档的用途；
+   - 记录谁会读；
+   - 记录什么时候读；
+   - 记录什么时候更新。
+
+3. `README.md`
+   - 只有当新增文档影响项目入口、核心结构或新用户理解时才需要更新；
+   - 不要让 README 变成全量文档清单。
+
+4. `docs/PR_SUMMARIES.md`
+   - 重要文档新增 / 删除 / 重命名应在对应 PR 记录中说明。
+
+规则：
+
+- 新增重要文档：更新 `DOCS_MAP.md`。
+- 删除重要文档：从 `DOCS_MAP.md` 移除或标记迁移。
+- 重命名重要文档：同步更新 `DOCS_MAP.md` 中的路径。
+- 普通小文档或临时草稿不一定进入 DOCS_MAP，但进入正式 docs 体系后必须补充。

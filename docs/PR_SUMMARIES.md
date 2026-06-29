@@ -1,5 +1,12 @@
 # PR_SUMMARIES
 
+## v0.1.18 - Docs Map Routing Rules
+
+- 目标：将 v0.1.17 的两个建议正式固化为规则。
+- 更新：新增 / 删除 / 重命名重要文档时，应同步更新 `docs/DOCS_MAP.md`。
+- 更新：生成 CommandPack 时，优先使用 `docs/DOCS_MAP.md` 选择需要读取的上下文文档，减少盲目全量读取。
+- 影响文件：DOCS_MAP、DOCS_MAP 模板、CommandPack 生成指南、CommandPack 模板、文件角色矩阵、ContextPack 生命周期文档。
+
 ## v0.1.17 - Docs Map
 
 - 目标：新增文档地图机制，解决 docs 文档变多后难以判断"该读哪份、该更新哪份"的问题。

@@ -41,3 +41,29 @@
 - 新增、删除、重命名文件时，更新 `MANIFEST.md`。
 - 项目状态变化时，更新 ContextPack。
 - 重要任务完成后，更新 PR_SUMMARIES。
+
+## 5. 重要文档变更同步规则
+
+当新增、删除、重命名重要文档时，必须同步检查：
+
+- `MANIFEST.md`：是否需要更新文件清单；
+- `docs/DOCS_MAP.md`：是否需要更新文档用途和读取时机；
+- `README.md`：是否影响项目入口说明；
+- `docs/PR_SUMMARIES.md`：是否需要记录本次文档变化。
+
+原则：
+
+- MANIFEST 记录"有哪些文件"；
+- DOCS_MAP 记录"这些文档做什么、什么时候读、什么时候更新"；
+- ContextPack 记录"项目当前上下文"。
+
+## 6. DOCS_MAP-first 读取策略
+
+当项目文档较多时，不要默认读取全部文档。
+
+推荐：
+
+1. 先读任务意图或 CommandPack；
+2. 再读 `docs/DOCS_MAP.md`；
+3. 按任务风险选择需要的上下文文档；
+4. 缺少必要文档时 STOP。
